@@ -1,0 +1,5234 @@
+[
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C601",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C601",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "03/03/26 đến 21/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C804",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C804",
+      "giang_vien": "V.X.Thịnh",
+      "thoi_gian": "03/03/26 đến 21/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C608",
+      "giang_vien": "T.T.H.Trang",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C608",
+      "giang_vien": "T.T.H.Trang",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C605",
+      "giang_vien": "N.T.Đê",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03001",
+    "ten_mh": "Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C605",
+      "giang_vien": "N.T.Đê",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 1,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "N.V.Thùy",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "N.V.Thùy",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 1,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "T.H.P.Thuận",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "20/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "08/05/26 đến 29/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "20/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "08/05/26 đến 29/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "Đ.Đ.Quang",
+      "thoi_gian": "19/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "Đ.Đ.Quang",
+      "thoi_gian": "07/05/26 đến 28/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "Đ.Đ.Quang",
+      "thoi_gian": "19/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "Đ.Đ.Quang",
+      "thoi_gian": "07/05/26 đến 28/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 1,
+    "lop": "D25_TH06, D25_TH05",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "B202",
+      "giang_vien": "H.X.Dương",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "T.T.H.Trang",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03002",
+    "ten_mh": "Thí nghiệm Kỹ thuật số",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "A307",
+      "giang_vien": "T.T.H.Trang",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "05/03/26 đến 19/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "26/03/26 đến 09/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "16/04/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "02/03/26 đến 16/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "23/03/26 đến 06/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "13/04/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "03/03/26 đến 17/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "24/03/26 đến 07/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "14/04/26 đến 12/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "19/05/26 đến 02/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "27/03/26 đến 10/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "17/04/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "25/03/26 đến 08/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "15/04/26 đến 13/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "20/05/26 đến 03/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "03/03/26 đến 17/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "24/03/26 đến 07/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "14/04/26 đến 12/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "19/05/26 đến 02/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "05/03/26 đến 19/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "26/03/26 đến 09/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "16/04/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "07/03/26 đến 21/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "28/03/26 đến 11/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "05/03/26 đến 19/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM09_B305",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "26/03/26 đến 09/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "16/04/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "N.L.A.Thư",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "27/03/26 đến 10/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "17/04/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "25/03/26 đến 08/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "21",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "18/04/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "21",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM10_B303",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "02/03/26 đến 09/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "05/03/26 đến 12/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03042",
+    "ten_mh": "Triển khai hệ thống thông tin",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM09_B305",
+      "giang_vien": "L.T.M.Dung",
+      "thoi_gian": "25/03/26 đến 08/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "02/03/26 đến 13/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "03/03/26 đến 14/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "04/03/26 đến 15/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "05/03/26 đến 16/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "06/03/26 đến 17/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "04/03/26 đến 15/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "20/04/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03043",
+    "ten_mh": "Xây dựng phần mềm Web",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "T.V.Hùng",
+      "thoi_gian": "22/04/26 đến 13/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "05/03/26 đến 19/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "07/03/26 đến 14/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "02/03/26 đến 16/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "04/03/26 đến 11/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "03/03/26 đến 17/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03044",
+    "ten_mh": "Xây dựng phần mềm Windows",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "N.T.Tùng",
+      "thoi_gian": "06/03/26 đến 13/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "04/03/26 đến 15/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "02/03/26 đến 13/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "03/03/26 đến 14/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "07/03/26 đến 18/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "05/03/26 đến 16/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "02/03/26 đến 13/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C803",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C803",
+      "giang_vien": "L.A.Vinh",
+      "thoi_gian": "05/03/26 đến 16/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "20/04/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C703",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "23/04/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03057",
+    "ten_mh": "AI cơ bản và ứng dụng",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C705",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "07/05/26 đến 21/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "03/03/26 đến 17/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "24/03/26 đến 07/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "14/04/26 đến 12/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "19/05/26 đến 02/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "27/03/26 đến 10/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "17/04/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "25/03/26 đến 08/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "15/04/26 đến 13/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "20/05/26 đến 03/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "03/03/26 đến 03/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "10/03/26 đến 07/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "14/04/26 đến 28/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "05/05/26 đến 02/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "11/03/26 đến 08/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "04/03/26 đến 04/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "06/05/26 đến 03/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "15/04/26 đến 29/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 6,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "CS03058",
+    "ten_mh": "Xây dựng phần mềm thiết bị di động",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "PM11_B301",
+      "giang_vien": "H.Khuê",
+      "thoi_gian": "27/03/26 đến 10/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS03153",
+    "ten_mh": "Đồ án / Khóa luận tốt nghiệp",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 5,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "",
+      "tiet_bat_dau": 0,
+      "so_tiet": 0,
+      "phong": "",
+      "giang_vien": "",
+      "thoi_gian": "11/05/26 đến 16/08/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C601",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C601",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 3,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C601",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 3,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "N.T.N.Hà",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 3,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "C805",
+      "giang_vien": "N.T.N.Hà",
+      "thoi_gian": "03/03/26 đến 26/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C804",
+      "giang_vien": "N.T.N.Hà",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 3,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C804",
+      "giang_vien": "N.T.N.Hà",
+      "thoi_gian": "03/03/26 đến 26/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C708",
+      "giang_vien": "B.N.Bằng",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 3,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C708",
+      "giang_vien": "B.N.Bằng",
+      "thoi_gian": "04/03/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C605",
+      "giang_vien": "T.T.N.ý",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C605",
+      "giang_vien": "T.T.N.ý",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09001",
+    "ten_mh": "Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 3,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C605",
+      "giang_vien": "T.T.N.ý",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 1,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "16/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "04/05/26 đến 25/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 1,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "18/03/26 đến 20/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "20/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "08/05/26 đến 29/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "20/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "08/05/26 đến 29/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "19/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "07/05/26 đến 28/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "19/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "07/05/26 đến 28/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 1,
+    "lop": "D25_TH05, D25_TH06",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 10,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.Q.Trường",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09002",
+    "ten_mh": "Thực hành Nhập môn lập trình",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "PM02_B308",
+      "giang_vien": "T.T.M.Huỳnh",
+      "thoi_gian": "17/03/26 đến 19/05/26"
+    }
+  },
+  {
+    "ma_mh": "CS09151",
+    "ten_mh": "Thực tập tốt nghiệp",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 4,
+    "lop": "D22_TH",
+    "lich_hoc": {
+      "thu": "",
+      "tiet_bat_dau": 0,
+      "so_tiet": 0,
+      "phong": "",
+      "giang_vien": "B.N.Bằng",
+      "thoi_gian": "06/04/26 đến 03/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 2,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 2,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 2,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "P.T.Ngọc",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "",
+      "tiet_bat_dau": 0,
+      "so_tiet": 0,
+      "phong": "",
+      "giang_vien": "P.T.K.Yến",
+      "thoi_gian": "02/03/26 đến 26/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "",
+      "tiet_bat_dau": 0,
+      "so_tiet": 0,
+      "phong": "",
+      "giang_vien": "P.T.K.Yến",
+      "thoi_gian": "04/05/26 đến 07/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "N.H.M.Thanh",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "07/03/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 2,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 2,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "07/03/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 2,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.L.Tâm",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.X.N.Bách",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.X.N.Bách",
+      "thoi_gian": "07/03/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "T.X.N.Bách",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "21",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "21",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "21",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 2,
+    "lop": "D25_TH06, D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 2,
+    "lop": "D25_TH06, D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "22",
+    "so_tc": 2,
+    "lop": "D25_TH06, D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C305",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C307",
+      "giang_vien": "T.V.Viễn",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C307",
+      "giang_vien": "T.V.Viễn",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS19008",
+    "ten_mh": "Tiếng Anh 2",
+    "ghi_chu": "",
+    "nhom_to": "23",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "C307",
+      "giang_vien": "T.V.Viễn",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS19010",
+    "ten_mh": "Tiếng Anh 4",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 2,
+    "lop": "D24_TH_B",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "N.H.M.Thanh",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS19010",
+    "ten_mh": "Tiếng Anh 4",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 2,
+    "lop": "D24_TH_B",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "C303",
+      "giang_vien": "V.B.Khanh",
+      "thoi_gian": "04/03/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 4,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C601",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 4,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C601",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "03/03/26 đến 26/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C803",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C803",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "07/03/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C803",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 4,
+      "phong": "C805",
+      "giang_vien": "T.N.Hội",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 4,
+      "phong": "C805",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 4,
+      "phong": "C805",
+      "giang_vien": "N.T.T.Phương",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 4,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "T.N.An",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 4,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "T.N.An",
+      "thoi_gian": "04/03/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 4,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 4,
+      "phong": "C806",
+      "giang_vien": "T.N.Hội",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 4,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 4,
+      "phong": "C806",
+      "giang_vien": "T.N.Hội",
+      "thoi_gian": "04/03/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "T.N.An",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "T.N.An",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS33002",
+    "ten_mh": "Toán A2 (Hàm nhiều biến, giải tích vec tơ)",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "T.N.An",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 4,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C601",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 4,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C601",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "07/03/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 4,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C601",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 4,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C803",
+      "giang_vien": "C.T.M.Dung",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 4,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C803",
+      "giang_vien": "C.T.M.Dung",
+      "thoi_gian": "04/03/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C605",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C605",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 4,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C605",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "06/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 4,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 4,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "C804",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS43002",
+    "ten_mh": "Vật lý 2",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 4,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "C808",
+      "giang_vien": "N.N.Phương",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "01",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "02",
+    "so_tc": 1,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "04/03/26 đến 18/03/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 1,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "03",
+    "so_tc": 1,
+    "lop": "D25_TH01, D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "04",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "03/03/26 đến 17/03/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "30/01/26 đến 06/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "05",
+    "so_tc": 1,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "06/03/26 đến 20/03/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "06",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "25/03/26 đến 22/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 1,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "25/03/26 đến 22/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 1,
+    "lop": "D25_TH03, D25_TH04",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "27/03/26 đến 24/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "23/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 1,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "23/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 1,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 7,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 1,
+    "lop": "D25_TH05, D25_TH06",
+    "lich_hoc": {
+      "thu": "6",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "H.A.Tấn",
+      "thoi_gian": "08/05/26 đến 05/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 4,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "29/04/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS49005",
+    "ten_mh": "Thí nghiệm Vật lý_Phần 2",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 1,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 1,
+      "so_tiet": 3,
+      "phong": "F104",
+      "giang_vien": "P.N.T.(ly)",
+      "thoi_gian": "29/04/26 đến 27/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "P.T.B.Trâm",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "07",
+    "so_tc": 3,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "P.T.B.Trâm",
+      "thoi_gian": "02/03/26 đến 13/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C803",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "08",
+    "so_tc": 3,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C803",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "03/03/26 đến 14/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "D.T.T.Thơ",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "09",
+    "so_tc": 3,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 1,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "D.T.T.Thơ",
+      "thoi_gian": "02/03/26 đến 13/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C804",
+      "giang_vien": "A.T.N.Trinh",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "10",
+    "so_tc": 3,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C804",
+      "giang_vien": "A.T.N.Trinh",
+      "thoi_gian": "05/03/26 đến 16/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C806",
+      "giang_vien": "N.T.H.Phương",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "11",
+    "so_tc": 3,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C806",
+      "giang_vien": "N.T.H.Phương",
+      "thoi_gian": "07/03/26 đến 18/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 3,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C808",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "31/01/26 đến 07/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS79005",
+    "ten_mh": "Triết học Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 3,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C808",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "07/03/26 đến 18/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "P.T.B.Trâm",
+      "thoi_gian": "20/04/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "12",
+    "so_tc": 2,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 7,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "P.T.B.Trâm",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "13",
+    "so_tc": 2,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C803",
+      "giang_vien": "P.T.B.Trâm",
+      "thoi_gian": "21/04/26 đến 26/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "20/04/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "14",
+    "so_tc": 2,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C601",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "04/05/26 đến 01/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C804",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "23/04/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 2,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C804",
+      "giang_vien": "V.V.Mười",
+      "thoi_gian": "07/05/26 đến 04/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C806",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "25/04/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 2,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 8,
+      "so_tiet": 5,
+      "phong": "C806",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C808",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "25/04/26 đến 25/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS79006",
+    "ten_mh": "Kinh tế chính trị Mác - Lênin",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 2,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "7",
+      "tiet_bat_dau": 2,
+      "so_tiet": 5,
+      "phong": "C808",
+      "giang_vien": "N.V.H.(cb)",
+      "thoi_gian": "09/05/26 đến 06/06/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 0,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "15",
+    "so_tc": 0,
+    "lop": "D25_TH01",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "04/03/26 đến 29/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 0,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "N.V.Hồng",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 0,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "N.V.Hồng",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "16",
+    "so_tc": 0,
+    "lop": "D25_TH02",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "N.V.Hồng",
+      "thoi_gian": "04/05/26 đến 04/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 0,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "L.G.Hán",
+      "thoi_gian": "29/01/26 đến 05/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 0,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "L.G.Hán",
+      "thoi_gian": "05/03/26 đến 23/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "17",
+    "so_tc": 0,
+    "lop": "D25_TH03",
+    "lich_hoc": {
+      "thu": "5",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "L.G.Hán",
+      "thoi_gian": "07/05/26 đến 07/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 0,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "26/01/26 đến 02/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 0,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "02/03/26 đến 20/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "18",
+    "so_tc": 0,
+    "lop": "D25_TH04",
+    "lich_hoc": {
+      "thu": "2",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "04/05/26 đến 04/05/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 0,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "27/01/26 đến 03/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "19",
+    "so_tc": 0,
+    "lop": "D25_TH05",
+    "lich_hoc": {
+      "thu": "3",
+      "tiet_bat_dau": 2,
+      "so_tiet": 4,
+      "phong": "SAN_1",
+      "giang_vien": "T.V.Tú",
+      "thoi_gian": "03/03/26 đến 28/04/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 0,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_2",
+      "giang_vien": "T.B.Hoài",
+      "thoi_gian": "28/01/26 đến 04/02/26"
+    }
+  },
+  {
+    "ma_mh": "GS93005",
+    "ten_mh": "Giáo dục thể chất 1",
+    "ghi_chu": "",
+    "nhom_to": "20",
+    "so_tc": 0,
+    "lop": "D25_TH06",
+    "lich_hoc": {
+      "thu": "4",
+      "tiet_bat_dau": 8,
+      "so_tiet": 4,
+      "phong": "SAN_2",
+      "giang_vien": "T.B.Hoài",
+      "thoi_gian": "04/03/26 đến 29/04/26"
+    }
+  }
+]
