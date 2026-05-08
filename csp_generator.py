@@ -1,10 +1,10 @@
 from models import ClassSection, PersonalEvent
 
-CourseGroups  = dict[str, list[ClassSection]]     # {course_id: [ClassSection]}
-Domains       = dict[str, list[ClassSection]]     # {course_id: [ClassSection còn hợp lệ]}
-ConflictSet   = set[tuple[str, str]]              # {(class_id_A, class_id_B)}
-Schedule      = dict[str, ClassSection]           # {course_id: ClassSection đã chọn}
-Removed       = dict[str, list[ClassSection]]     # snapshot để restore sau FC
+CourseGroups = dict[str, list[ClassSection]]    # {course_id: [ClassSection]}
+Domains = dict[str, list[ClassSection]]         # {course_id: [ClassSection còn hợp lệ]}
+ConflictSet = set[tuple[str, str]]              # {(class_id_A, class_id_B)}
+Schedule = dict[str, ClassSection]              # {course_id: ClassSection đã chọn}
+Removed = dict[str, list[ClassSection]]         # snapshot để restore sau FC
 
 
 # 1. Lọc PersonalEvents
@@ -38,13 +38,12 @@ def _init_domains(course_groups: CourseGroups, avoid_days: set[int]) -> Domains:
     return domains
 
 
-# 3. MRV — chọn môn ưu tiên
+# 3. MRV : chọn môn ưu tiên
 def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
     """
     MRV chọn môn có ít lựa chọn hợp lệ nhất.
-
-    Môn có domain nhỏ nhất có khả năng dẫn đến dead-end cao nhất.
-    Gán nó sớm → phát hiện và cắt nhánh vô nghĩa trước khi đi sâu.
+    Môn có domain nhỏ nhất có khả năng dẫn đến điểm chết cao nhất.
+    Gán nó sớm sẽ giúp phát hiện và cắt nhánh vô nghĩa trước khi đi sâu.
     """
     return min(unassigned, key=lambda c: len(domains[c]))
 
@@ -53,16 +52,16 @@ def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
 def _forward_check(cls: ClassSection, unassigned: list[str], domains: Domains, conflict_set: ConflictSet,
 ) -> tuple[bool, Removed]:
     """
-    Sau khi gán `cls` cho môn hiện tại, loại các nhóm lớp xung đột
+    Sau khi gán một lớp cho môn hiện tại, loại các nhóm lớp xung đột
     khỏi domain của các môn chưa xét (lan truyền ràng buộc).
 
     Dùng restore dict thay vì deep_copy:
-      - Chỉ ghi lại những gì bị xóa → O(xóa thực tế) thay vì O(toàn bộ domain)
+      - Chỉ ghi lại những gì bị xóa
       - restore_domains hoàn tác chính xác, không ảnh hưởng phần tử khác
 
     Trả về:
-      (True,  removed) nếu mọi domain còn ≥ 1 lựa chọn → tiếp tục
-      (False, removed) nếu có domain rỗng → dead-end, backtrack ngay
+      (True,  removed) nếu mọi domain còn ≥ 1 lựa chọn thì sẽ tiếp tục
+      (False, removed) nếu có domain rỗng thì sẽ dẫn đến điểm chết, backtrack ngay
     """
     removed: Removed = {}
 
@@ -74,14 +73,14 @@ def _forward_check(cls: ClassSection, unassigned: list[str], domains: Domains, c
                 removed[other_id].append(g)
 
         if len(domains[other_id]) == 0:
-            # Dead-end phát hiện sớm — trả về ngay, không cần duyệt tiếp
+            # Dead-end phát hiện sớm giúp trả về ngay, không cần duyệt tiếp
             return False, removed
 
     return True, removed
 
 
 def _restore_domains(removed: Removed, domains: Domains) -> None:
-    # Hoàn tác forward_check — đưa các nhóm lớp bị loại trở lại domain
+    # Hoàn tác forward_check để đưa các nhóm lớp bị loại trở lại domain
     for course_id, classes in removed.items():
         domains[course_id].extend(classes)
 
@@ -98,17 +97,16 @@ def _backtrack(
 ) -> None:
     """
     Đệ quy backtracking với MRV + Forward Checking.
-
     Luồng mỗi bước:
-      1. Nếu đủ max_solutions → dừng sớm.
-      2. Nếu đã gán hết môn → lưu nghiệm.
+      1. Nếu đủ max_solutions thì dừng sớm.
+      2. Nếu đã gán hết môn thì lưu nghiệm.
       3. MRV chọn môn tiếp theo.
       4. Với mỗi nhóm lớp trong domain của môn đó:
            a. Bỏ qua nếu xung đột PersonalEvents.
-           b. Bỏ qua nếu xung đột với môn đã gán (tra conflict_set O(1)).
-           c. Gán thử → Forward Checking lan truyền ràng buộc.
-           d. Nếu FC ok → đệ quy sâu hơn.
-           e. Restore domain → thử nhóm lớp tiếp theo (backtrack).
+           b. Bỏ qua nếu xung đột với môn đã gán (tra conflict_set để kiếm các cặp xung đột).
+           c. Gán thử bằng Forward Checking lan truyền ràng buộc.
+           d. Nếu môn được chọn chạy được thì đệ quy sâu hơn.
+           e. Restore domain rồi thử nhóm lớp tiếp theo (backtrack).
     """
     if len(valid_schedules) >= max_solutions:
         return
@@ -117,7 +115,7 @@ def _backtrack(
         valid_schedules.append(dict(chosen))
         return
 
-    # Bước 3 — MRV
+    # Bước 3 MRV
     course_id = _choose_next_course(unassigned, domains)
     next_unassigned = [c for c in unassigned if c != course_id]
 
@@ -176,7 +174,7 @@ def generate_schedules(
 
     domains = _init_domains(course_groups, avoid_days)
 
-    # Domain rỗng ngay từ đầu → không thể có nghiệm
+    # Domain rỗng ngay từ đầu thì sẽ không thể có nghiệm
     if any(len(domains[c]) == 0 for c in domains):
         return []
 
