@@ -31,10 +31,10 @@ def _init_domains(course_groups: CourseGroups, avoid_days: set[int]) -> Domains:
     """
     domains: Domains = {}
     for course_id, sections in course_groups.items():
-        domains[course_id] = [
-            cls for cls in sections
-            if cls.day_of_week not in avoid_days
-        ]
+        domains[course_id] = []
+        for cls in sections:
+            if cls.day_of_week not in avoid_days:
+                domains[course_id].append(cls)
     return domains
 
 
@@ -45,7 +45,49 @@ def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
     Môn có domain nhỏ nhất có khả năng dẫn đến điểm chết cao nhất.
     Gán nó sớm sẽ giúp phát hiện và cắt nhánh vô nghĩa trước khi đi sâu.
     """
-    return min(unassigned, key=lambda c: len(domains[c]))
+    min_course = unassigned[0]
+    min_size = len(domains[min_course])
+    
+    for cls in unassigned[1:]:
+        size = len(domains[cls])
+        if size < min_size:
+            min_size = size
+            min_course = cls
+    return min_course 
+
+
+# chọn lớp có ít xung đột nhất với các lớp của môn khác
+def _choose_next_section_of_course(course_id : str, domains: Domains, unassigned: list[str],
+                                   conflict_set: ConflictSet) -> list[ClassSection]:
+    candidates = domains[course_id]
+    
+    scored = []
+    
+    # duyệt nhóm lớp của môn
+    for cls in candidates:
+        conflict_count = 0
+        
+        # duyệt các môn chưa được giao
+        for other_id in unassigned:
+            if other_id == course_id:
+                continue
+            
+            # duyệt nhóm lớp của môn chưa dc giao
+            for other_cls in domains[other_id]:
+                
+                # xung đột thì tính điểm
+                if (cls.class_id, other_cls.class_id) in conflict_set:
+                    conflict_count += 1
+        scored.append((conflict_count, cls))
+    
+    # sắp xếp theo các lớp có ít xung đột nhất
+    scored.sort(key=lambda x: x[0])
+    
+    # trả về danh sách với môn ít xung đột từ nhỏ đến lớn
+    result = []
+    for conflict_count, cls in scored:
+        result.append(cls)
+    return result
 
 
 # 4. Forward Checking
@@ -118,8 +160,11 @@ def _backtrack(
     # Bước 3 MRV
     course_id = _choose_next_course(unassigned, domains)
     next_unassigned = [c for c in unassigned if c != course_id]
+    
+    # Bước 4 - Sử dụng thêm LCV để lựa chọn nhóm lớp có ít xung đột với nhóm lớp các môn khác
+    lcv_classess = _choose_next_section_of_course(course_id, domains, next_unassigned, conflict_set)
 
-    for cls in list(domains[course_id]):
+    for cls in lcv_classess:
 
         # Bước 4a lọc PersonalEvents
         if _conflicts_with_personal_events(cls, personal_events):

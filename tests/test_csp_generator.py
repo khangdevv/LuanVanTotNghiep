@@ -149,7 +149,7 @@ COURSE_IDS = [
 
 # Ngày muốn tránh (2=Thứ2 … 8=CN). Sửa tuỳ ý.
 # Ví dụ: {6, 7} = tránh Thứ 6 và Thứ 7
-AVOID_DAYS: set[int] = {7, 8}
+AVOID_DAYS: set[int] = {6, 7, 8}
 
 # Lịch bận cá nhân. Sao chép và sửa từng mẫu theo nhu cầu.
 PERSONAL_EVENTS: list[PersonalEvent] = [
@@ -203,7 +203,7 @@ def valid_schedules(course_groups, conflict_set) -> list[dict]:
         conflict_set    = conflict_set,
         avoid_days      = AVOID_DAYS,
         personal_events = PERSONAL_EVENTS,
-        max_solutions   = 20,
+        max_solutions   = 200,
     )
 
 
@@ -550,7 +550,7 @@ class TestEndToEndSimple:
 
 DAY_LABEL = {2: "Thu 2", 3: "Thu 3", 4: "Thu 4",
              5: "Thu 5", 6: "Thu 6", 7: "Thu 7", 8: "CN"}
-PRINT_MAX = 20   # số TKB muốn in
+PRINT_MAX = 200   # số TKB muốn in
 
 
 def _print_schedule(idx: int, sched: dict) -> None:
