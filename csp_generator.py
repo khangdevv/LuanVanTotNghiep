@@ -48,17 +48,16 @@ def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
     min_course = unassigned[0]
     min_size = len(domains[min_course])
     
-    for cls in unassigned[1:]:
-        size = len(domains[cls])
+    for course in unassigned[1:]:
+        size = len(domains[course])
         if size < min_size:
             min_size = size
-            min_course = cls
+            min_course = course
     return min_course 
 
 
 # chọn lớp có ít xung đột nhất với các lớp của môn khác
-def _choose_next_section_of_course(course_id : str, domains: Domains, unassigned: list[str],
-                                   conflict_set: ConflictSet) -> list[ClassSection]:
+def _choose_next_section_of_course(course_id : str, domains: Domains, unassigned: list[str], conflict_set: ConflictSet) -> list[ClassSection]:
     candidates = domains[course_id]
     
     scored = []

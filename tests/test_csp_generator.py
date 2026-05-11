@@ -1,20 +1,14 @@
 """
-Test suite cho Tầng 1 (build_conflict_set) và Tầng 2 (generate_schedules).
 Dữ liệu thực từ schedule_data_from_web.json — trường STU.
 
 Cách chạy:
     cd core
     pytest -s tests/test_csp_generator.py -v
-
-Để tuỳ chỉnh:
-    - COURSE_IDS     : danh sách môn muốn test
-    - AVOID_DAYS     : ngày muốn tránh
-    - PERSONAL_EVENTS: lịch bận cá nhân
 """
 
 import json
 import sys
-from datetime import time, timedelta
+from datetime import time
 from pathlib import Path
 
 import pytest
@@ -28,60 +22,7 @@ sys.path.insert(0, str(ROOT))
 from csp_generator import generate_schedules
 from detect_conflicts import build_conflict_set
 from models import ClassSection, PersonalEvent
-
-# ---------------------------------------------------------------------------
-# Bảng tiết → giờ (theo lịch STU từ ảnh chụp màn hình)
-#
-#   Tiết 1–3  : 07:00 – 09:30  (mỗi tiết 50 phút)
-#   Nghỉ giải lao: 09:30 – 09:35
-#   Tiết 4–6  : 09:35 – 12:05
-#   Nghỉ trưa : 12:05 – 12:35
-#   Tiết 7–9  : 12:35 – 15:05
-#   Nghỉ giải lao: 15:05 – 15:10
-#   Tiết 10–12: 15:10 – 17:40
-#   Nghỉ giải lao: 17:40 – 17:45
-#   Tiết 13–15: 17:45 – 20:15
-# ---------------------------------------------------------------------------
-TIET_START: dict[int, time] = {
-    1:  time(7,  0),
-    2:  time(7,  50),
-    3:  time(8,  40),
-    4:  time(9,  35),   # sau nghỉ giải lao 09:30-09:35
-    5:  time(10, 25),
-    6:  time(11, 15),
-    7:  time(12, 35),   # sau nghỉ trưa 12:05-12:35
-    8:  time(13, 25),
-    9:  time(14, 15),
-    10: time(15, 10),   # sau nghỉ giải lao 15:05-15:10
-    11: time(16, 0),
-    12: time(16, 50),
-    13: time(17, 45),   # sau nghỉ giải lao 17:40-17:45
-    14: time(18, 35),
-    15: time(19, 25),
-}
-
-
-def tiet_to_time(tiet_bat_dau: int, so_tiet: int) -> tuple[time, time]:
-    """
-    Chuyển (tiet_bat_dau, so_tiet) → (start_time, end_time).
-
-    end_time = start của tiết cuối + 50 phút.
-    Công thức này tự động bao gồm các khoảng nghỉ giải lao nằm
-    trong khoảng [tiet_bat_dau, tiet_bat_dau + so_tiet - 1].
-
-    Ví dụ:
-        tiet_bat_dau=1, so_tiet=6  → 07:00 – 12:05  (Tiết 1-6)
-        tiet_bat_dau=7, so_tiet=6  → 12:35 – 17:40  (Tiết 7-12)
-        tiet_bat_dau=7, so_tiet=3  → 12:35 – 15:05  (Tiết 7-9)
-    """
-    start = TIET_START[tiet_bat_dau]
-    last_tiet_start = TIET_START[tiet_bat_dau + so_tiet - 1]
-    end_dt = (
-        timedelta(hours=last_tiet_start.hour, minutes=last_tiet_start.minute)
-        + timedelta(minutes=50)
-    )
-    end = time(int(end_dt.seconds // 3600), int((end_dt.seconds % 3600) // 60))
-    return start, end
+from demo.time_utils import tiet_to_time
 
 
 # ---------------------------------------------------------------------------
