@@ -201,18 +201,7 @@ def generate_schedules(
     personal_events: list[PersonalEvent],
     max_solutions: int = 200,
 ) -> list[Schedule]:
-    """
-    Tham số:
-        course_groups   {course_id: [ClassSection]} — tất cả nhóm lớp theo môn
-        conflict_set    output của build_conflict_set()
-        avoid_days      set day_of_week cần tránh (từ PreferenceAvoidDay)
-        personal_events danh sách lịch bận cá nhân (PersonalEvent)
-        max_solutions   giới hạn số nghiệm thu thập (tránh bùng nổ tổ hợp)
 
-    Trả về:
-        list[dict[course_id → ClassSection]] — mỗi phần tử là một TKB hợp lệ.
-        Trả [] nếu không có nghiệm.
-    """
     if not course_groups:
         return []
 

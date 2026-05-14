@@ -19,3 +19,5 @@ class Preference(BaseModel):
         if abs(sum(weights) - 1.0) > 1e-9:
             raise ValueError("w_break + w_preference + w_balance must equal 1.0")
         return self
+    
+    

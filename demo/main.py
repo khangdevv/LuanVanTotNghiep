@@ -1,8 +1,4 @@
 """
-Demo chạy thuật toán xếp thời khóa biểu STU.
-
-Cách chạy:
-    cd core
     python demo/main.py
 """
 
@@ -16,10 +12,12 @@ from pathlib import Path
 # Thêm core/ vào sys.path để import các module gốc
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from csp_generator import generate_schedules  # noqa: E402
-from detect_conflicts import build_conflict_set  # noqa: E402
-from models import ClassSection, PersonalEvent  # noqa: E402
-from demo.time_utils import tiet_to_time  # noqa: E402
+from scoring_function import calculate_total_score
+from enums import PreferredSlot
+from csp_generator import generate_schedules  
+from detect_conflicts import build_conflict_set  
+from models import ClassSection, PersonalEvent, Preference  
+from demo.time_utils import tiet_to_time 
 
 _DAY_LABEL = {2: "Thứ 2", 3: "Thứ 3", 4: "Thứ 4",
               5: "Thứ 5", 6: "Thứ 6", 7: "Thứ 7", 8: "CN"}
@@ -62,8 +60,17 @@ PERSONAL_EVENTS: list[PersonalEvent] = [
     ),
 ]
 
+PREFERENCE =  Preference(
+        student_id = "demo_student",
+        preferred_slot = PreferredSlot.MORNING,
+        min_break_minutes = 15,
+        w_break = 0.4,
+        w_preference = 0.3,
+        w_balance = 0.3
+    )
+
 MAX_SOLUTIONS = 20   # giới hạn số TKB sinh ra
-PRINT_MAX     = 5    # số TKB in ra
+PRINT_MAX     = 20   # số TKB in ra
 
 # ===========================================================================
 # Loader
@@ -157,6 +164,29 @@ def main() -> None:
         personal_events = PERSONAL_EVENTS,
         max_solutions   = MAX_SOLUTIONS,
     )
+    
+    schedule_scores : list[tuple[dict[str, ClassSection], dict[str, float]]] = []
+    
+    for schedule in schedules:
+        sections = list(schedule.values())
+        
+        score = calculate_total_score(sections, PREFERENCE, list(AVOID_DAYS))
+        
+        schedule_scores.append((schedule, score))
+
+    for i in range(len(schedule_scores)):
+        max_index = i
+        
+        for j in range(i + 1, len(schedule_scores)):
+            current_score = schedule_scores[j][1]["total"]
+            max_score = schedule_scores[max_index][1]["total"]
+            
+            if current_score > max_score:
+                max_index = j
+                
+        temp = schedule_scores[i]
+        schedule_scores[i] = schedule_scores[max_index]
+        schedule_scores[max_index] = temp
 
     if not schedules:
         print("\n[!] Không tìm được TKB hợp lệ. Kiểm tra lại COURSE_IDS / AVOID_DAYS.")
@@ -164,10 +194,17 @@ def main() -> None:
 
     print(f"    → Tìm được {len(schedules)} TKB hợp lệ")
 
-    to_print = schedules[:PRINT_MAX]
+    to_print = schedule_scores[:PRINT_MAX]
     print(f"\n[4] In {len(to_print)} TKB đầu tiên:\n")
-    for i, sched in enumerate(to_print, start=1):
-        print_schedule(i, sched)
+    for i, schedule_score in enumerate(to_print, start=1):
+        schedule = schedule_score[0]
+        score = schedule_score[1]
+
+        print(f"\nDiem: {score['total']}")
+        print(f"  - Break time      : {score['break_time']}")
+        print(f"  - Preference match: {score['preference_match']}")
+        print(f"  - Workload balance: {score['workload_balance']}")
+        print_schedule(i, schedule)
 
     print(f"\n{'=' * 70}\n")
 
