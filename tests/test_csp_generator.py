@@ -1,88 +1,29 @@
 """
-Dữ liệu thực từ schedule_data_from_web.json — trường STU.
-
-Cách chạy:
-    cd core
     pytest -s tests/test_csp_generator.py -v
 """
 
-import json
 import sys
 from datetime import time
 from pathlib import Path
 
 import pytest
 
-# ---------------------------------------------------------------------------
-# Path setup
-# ---------------------------------------------------------------------------
-ROOT = Path(__file__).parent.parent
-sys.path.insert(0, str(ROOT))
-
 from csp_generator import generate_schedules
+from data_loader import DEFAULT_JSON_PATH, DEFAULT_SEMESTER_ID, load_course_groups
 from detect_conflicts import build_conflict_set
 from models import ClassSection, PersonalEvent
 from demo.time_utils import tiet_to_time
 
+# Path setup
+ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
 
-# ---------------------------------------------------------------------------
 # Loader: JSON → CourseGroups
-# ---------------------------------------------------------------------------
-JSON_PATH = ROOT / "data" / "schedule_data_from_web.json"
-SEMESTER_ID = "HK2-2025"   # dùng cho class_id và semester_id
+JSON_PATH = DEFAULT_JSON_PATH
+SEMESTER_ID = DEFAULT_SEMESTER_ID   # dùng cho class_id và semester_id
 
 
-def load_course_groups(course_ids: list[str]) -> dict[str, list[ClassSection]]:
-    """
-    Đọc JSON và trả về {course_id: [ClassSection]} cho các môn trong course_ids.
-
-    Mỗi cặp (ma_mh, nhom_to) trong JSON tạo ra 1 ClassSection duy nhất.
-    Nhiều record cùng nhom_to (khác thoi_gian) chỉ dùng record đầu tiên
-    vì giờ học/ngày học không đổi trong suốt học kỳ.
-    """
-    raw: list[dict] = json.loads(JSON_PATH.read_text(encoding="utf-8"))
-    seen: set[tuple[str, str]] = set()
-    groups: dict[str, list[ClassSection]] = {cid: [] for cid in course_ids}
-
-    for rec in raw:
-        course_id = rec["ma_mh"]
-        if course_id not in groups:
-            continue
-
-        nhom = rec["nhom_to"]
-        key = (course_id, nhom)
-        if key in seen:
-            continue            # bỏ qua record lặp cùng nhóm
-        seen.add(key)
-
-        lich = rec["lich_hoc"]
-        if lich["so_tiet"] <= 0:
-            continue
-
-        start, end = tiet_to_time(lich["tiet_bat_dau"], lich["so_tiet"])
-
-        groups[course_id].append(
-            ClassSection(
-                class_id    = f"{course_id}_{nhom}",
-                course_id   = course_id,
-                semester_id = SEMESTER_ID,
-                day_of_week = int(lich["thu"]),
-                start_time  = start,
-                end_time    = end,
-                room        = lich.get("phong"),
-                instructor  = lich.get("giang_vien"),
-                max_students= 1,
-            )
-        )
-
-    return groups
-
-
-# ===========================================================================
-# ── CẤU HÌNH TEST ──────────────────────────────────────────────────────────
 # Chỉnh sửa ba biến dưới đây để test theo nhu cầu thực tế.
-# ===========================================================================
-
 # Danh sách mã môn muốn xếp lịch (phải có trong schedule_data_from_web.json)
 COURSE_IDS = [
    "CS03042", "CS03002", "CS09002", "GS49005", "GS19008", "CS03058", "GS79005", "GS33002",
@@ -104,22 +45,9 @@ PERSONAL_EVENTS: list[PersonalEvent] = [
         end_time    = time(15, 5),      # 15:05  (Tiết 7-9)
         is_recurring= True,
     ),
-    # Mẫu 2: sự kiện lặp hàng tuần — Thứ 6 sáng
-    # PersonalEvent(
-    #     event_id    = 2,
-    #     student_id  = "test_student",
-    #     title       = "Câu lạc bộ",
-    #     day_of_week = 6,
-    #     start_time  = time(7, 0),
-    #     end_time    = time(9, 0),
-    #     is_recurring= True,
-    # ),
 ]
 
-# ===========================================================================
 # ── FIXTURES ───────────────────────────────────────────────────────────────
-# ===========================================================================
-
 @pytest.fixture(scope="session")
 def course_groups() -> dict[str, list[ClassSection]]:
     groups = load_course_groups(COURSE_IDS)
@@ -148,10 +76,7 @@ def valid_schedules(course_groups, conflict_set) -> list[dict]:
     )
 
 
-# ===========================================================================
 # ── TEST: tiet_to_time ─────────────────────────────────────────────────────
-# ===========================================================================
-
 class TestTietToTime:
     def test_tiet_1_6(self):
         """Tiết 1-6: 07:00 – 12:05 (khớp ảnh chụp màn hình)"""
@@ -193,10 +118,7 @@ class TestTietToTime:
         assert end_tiet6 < start_tiet7         # không giao nhau
 
 
-# ===========================================================================
 # ── TEST: load_course_groups ───────────────────────────────────────────────
-# ===========================================================================
-
 class TestLoader:
     def test_all_courses_loaded(self, course_groups):
         """Tất cả môn trong COURSE_IDS phải có nhóm lớp."""
@@ -224,10 +146,7 @@ class TestLoader:
             )
 
 
-# ===========================================================================
 # ── TEST: build_conflict_set ───────────────────────────────────────────────
-# ===========================================================================
-
 class TestConflictSet:
     def test_symmetric(self, conflict_set):
         """Mọi (a,b) phải có (b,a) tương ứng."""
@@ -294,10 +213,7 @@ class TestConflictSet:
         )
 
 
-# ===========================================================================
 # ── TEST: generate_schedules ───────────────────────────────────────────────
-# ===========================================================================
-
 class TestGenerateSchedules:
     def test_returns_list(self, valid_schedules):
         """Kết quả phải là list."""
@@ -393,10 +309,7 @@ class TestGenerateSchedules:
             seen.append(key)
 
 
-# ===========================================================================
 # ── TEST: tích hợp end-to-end với 2 môn đơn giản ──────────────────────────
-# ===========================================================================
-
 class TestEndToEndSimple:
     """
     Test với dữ liệu tạo thủ công — dễ kiểm soát kết quả.
@@ -485,10 +398,7 @@ class TestEndToEndSimple:
         assert results[0]["B"].class_id == "B2"   # B1 bị FC loại
 
 
-# ===========================================================================
 # ── IN KẾT QUẢ NGHIỆM ──────────────────────────────────────────────────────
-# ===========================================================================
-
 DAY_LABEL = {2: "Thu 2", 3: "Thu 3", 4: "Thu 4",
              5: "Thu 5", 6: "Thu 6", 7: "Thu 7", 8: "CN"}
 PRINT_MAX = 200   # số TKB muốn in

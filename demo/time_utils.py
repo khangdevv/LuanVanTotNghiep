@@ -15,6 +15,9 @@ _TIET_START: dict[int, time] = {
     10: time(15, 10),
     11: time(16,  0),
     12: time(16, 50),
+    13: time(17, 45),
+    14: time(18, 35),
+    15: time(19, 25)
 }
 
 

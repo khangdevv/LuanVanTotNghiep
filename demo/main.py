@@ -4,7 +4,6 @@
 
 from __future__ import annotations
 
-import json
 import sys
 from datetime import time
 from pathlib import Path
@@ -16,8 +15,8 @@ from scoring_function import calculate_total_score
 from enums import PreferredSlot
 from csp_generator import generate_schedules  
 from detect_conflicts import build_conflict_set  
+from data_loader import DEFAULT_JSON_PATH, load_course_groups
 from models import ClassSection, PersonalEvent, Preference  
-from demo.time_utils import tiet_to_time 
 
 _DAY_LABEL = {2: "Thứ 2", 3: "Thứ 3", 4: "Thứ 4",
               5: "Thứ 5", 6: "Thứ 6", 7: "Thứ 7", 8: "CN"}
@@ -27,18 +26,19 @@ _CA_START_MINUTES = (420, 575, 755, 910)
 def _get_ca(t) -> int | None:
     m = t.hour * 60 + t.minute
     ca1, ca2, ca3, ca4 = _CA_START_MINUTES
-    if m == ca1: return 1
-    if m == ca2: return 2
-    if m == ca3: return 3
-    if m >= ca4: return 4
+    if m == ca1: 
+        return 1
+    if m == ca2: 
+        return 2
+    if m == ca3: 
+        return 3
+    if m >= ca4: 
+        return 4
     return None
 
 ROOT = Path(__file__).parent.parent   # trỏ về core/
 
-# ===========================================================================
-# CẤU HÌNH DEMO — chỉnh sửa theo nhu cầu
-# ===========================================================================
-
+# chỉnh sửa theo nhu cầu
 COURSE_IDS: list[str] = [
     "CS03042", "CS03002", "CS09002", "GS49005",
     "GS19008", "CS03058", "GS79005", "GS33002",
@@ -69,59 +69,13 @@ PREFERENCE =  Preference(
         w_balance = 0.3
     )
 
-MAX_SOLUTIONS = 20   # giới hạn số TKB sinh ra
-PRINT_MAX     = 20   # số TKB in ra
+MAX_SOLUTIONS = 200   # giới hạn số TKB sinh ra
+PRINT_MAX     = 200   # số TKB in ra
 
-# ===========================================================================
 # Loader
-# ===========================================================================
+JSON_PATH = DEFAULT_JSON_PATH
 
-JSON_PATH   = ROOT / "data" / "schedule_data_from_web.json"
-SEMESTER_ID = "HK2-2025"
-
-
-def load_course_groups(course_ids: list[str]) -> dict[str, list[ClassSection]]:
-    raw: list[dict] = json.loads(JSON_PATH.read_text(encoding="utf-8"))
-    seen: set[tuple[str, str]] = set()
-    groups: dict[str, list[ClassSection]] = {cid: [] for cid in course_ids}
-
-    for rec in raw:
-        cid = rec["ma_mh"]
-        if cid not in groups:
-            continue
-
-        nhom = rec["nhom_to"]
-        if (cid, nhom) in seen:
-            continue
-        seen.add((cid, nhom))
-
-        lich = rec["lich_hoc"]
-        if lich["so_tiet"] <= 0:
-            continue
-
-        start, end = tiet_to_time(lich["tiet_bat_dau"], lich["so_tiet"])
-
-        groups[cid].append(
-            ClassSection(
-                class_id    = f"{cid}_{nhom}",
-                course_id   = cid,
-                semester_id = SEMESTER_ID,
-                day_of_week = int(lich["thu"]),
-                start_time  = start,
-                end_time    = end,
-                room        = lich.get("phong"),
-                instructor  = lich.get("giang_vien"),
-                max_students= 1,
-            )
-        )
-
-    return {cid: secs for cid, secs in groups.items() if secs}
-
-
-# ===========================================================================
 # Hiển thị
-# ===========================================================================
-
 def print_schedule(idx: int, sched: dict) -> None:
     print(f"\n{'=' * 70}")
     print(f"  TKB #{idx}")
@@ -137,10 +91,7 @@ def print_schedule(idx: int, sched: dict) -> None:
               f"{cls.instructor or '-'}  [Ca {ca}]")
 
 
-# ===========================================================================
-# Main
-# ===========================================================================
-
+# main
 def main() -> None:
     print("=" * 70)
     print("  DEMO THUẬT TOÁN XẾP THỜI KHÓA BIỂU — STU")
@@ -196,15 +147,22 @@ def main() -> None:
 
     to_print = schedule_scores[:PRINT_MAX]
     print(f"\n[4] In {len(to_print)} TKB đầu tiên:\n")
+    
+    count = 0
+    
     for i, schedule_score in enumerate(to_print, start=1):
         schedule = schedule_score[0]
         score = schedule_score[1]
+        
+        if count >= 3:
+            break
 
         print(f"\nDiem: {score['total']}")
         print(f"  - Break time      : {score['break_time']}")
         print(f"  - Preference match: {score['preference_match']}")
         print(f"  - Workload balance: {score['workload_balance']}")
         print_schedule(i, schedule)
+        count+=1
 
     print(f"\n{'=' * 70}\n")
 
