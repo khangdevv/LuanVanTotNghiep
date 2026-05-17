@@ -18,62 +18,54 @@ _SLOT_TO_CAS: dict[PreferredSlot, set[int]] = {
 def _to_minutes(t) -> int:
     return t.hour * 60 + t.minute
 
-# lấy vị trí ca
-def _get_ca_num(t) -> int | None:
+# lấy vị trí ca theo khoảng giờ
+def _get_ca_num(t) -> int:
     m = _to_minutes(t)
     ca1, ca2, ca3, ca4 = _CA_MINUTES
-    if m == ca1:
+    if m < ca2:
         return 1
-    if m == ca2:
+    if m < ca3:
         return 2
-    if m == ca3:
+    if m < ca4:
         return 3
-    if m >= ca4:
-        return 4
-    return None
+    return 4
 
 # giới hạn để trong khoảng 0 đến 1.0
 def _clamp_01(value: float) -> float:
     return max(0.0, min(1.0, value))
 
 
-# ánh xạ điểm theo phút
-def _gap_score(gap: int) -> float:
+# ánh xạ điểm theo phút, chuẩn hóa phần dưới ngưỡng bằng min_break cá nhân
+def _gap_score(gap: int, min_break: int) -> float:
     if gap < 0:
-        # quá gấp
-        return 0.0 
-    if gap < 10:
-        # hợp lí nhất
-        return 0.2
+        return 0.0
+    if gap < min_break:
+        return gap / min_break   # đạt 1.0 khi gap == min_break
     if gap <= 90:
-        # mức ổn chấp nhận dc
-        return 1.0
+        return 1.0               # vùng lý tưởng 
     if gap <= 180:
-        # bỏ trống 1 ca
-        return 0.7
+        return 0.7               # bỏ trống 1 ca
     if gap <= 300:
-        # bỏ trống 2 ca
-        return 0.4
+        return 0.4               # bỏ trống 2 ca
     return 0.1
 
 # tính điểm chất lượng khoảng nghỉ
-def calculate_break_time_score(schedule: list[ClassSection]) -> float:
-    by_day: dict[int, list[ClassSection]] = defaultdict(list) # tự táo list mới với key mới
+def calculate_break_time_score(schedule: list[ClassSection], min_break: int = 15) -> float:
+    by_day: dict[int, list[ClassSection]] = defaultdict(list)
     for cls in schedule:
         by_day[cls.day_of_week].append(cls)
 
     gap_scores: list[float] = []
     for sessions in by_day.values():
-        sorted_sessions = sorted(sessions, key=lambda s: _to_minutes(s.start_time)) # sắp xếp theo tăng thời lượng dần
+        sorted_sessions = sorted(sessions, key=lambda s: _to_minutes(s.start_time))
         for i in range(len(sorted_sessions) - 1):
-            # tính khoảng nghỉ giữa kết thúc của lớp trước đó và bắt đầu lớp kế tiếp
             end_min   = _to_minutes(sorted_sessions[i].end_time)
             start_min = _to_minutes(sorted_sessions[i + 1].start_time)
             gap = start_min - end_min
             if (end_min, start_min) in _DESIGNED_GAPS:
                 gap_scores.append(1.0)
             else:
-                gap_scores.append(_gap_score(gap))
+                gap_scores.append(_gap_score(gap, min_break))
 
     return 1.0 if not gap_scores else _clamp_01(sum(gap_scores) / len(gap_scores))
 
@@ -100,10 +92,11 @@ def calculate_workload_balance_score(schedule: list[ClassSection]) -> float:
         # đếm số lớp theo ngày
         by_day[cls.day_of_week] += 1
 
-    # lấy điểm tính phương sai
     counts = list(by_day.values())
     if len(counts) <= 1:
-        return 1.0
+        # 1 lớp thì 1.0
+        # nhiều lớp dồn cùng ngày 0.0
+        return 1.0 if len(schedule) <= 1 else 0.0
 
     avg      = sum(counts) / len(counts)
     variance = sum((c - avg) ** 2 for c in counts) / len(counts)
@@ -112,7 +105,7 @@ def calculate_workload_balance_score(schedule: list[ClassSection]) -> float:
 
 def calculate_total_score(schedule: list[ClassSection], preferences: Preference, avoid_days: list[int] = [],
 ) -> dict[str, float]:
-    break_score      = calculate_break_time_score(schedule)
+    break_score      = calculate_break_time_score(schedule, preferences.min_break_minutes)
     preference_score = calculate_preference_match_score(schedule, preferences, avoid_days)
     balance_score    = calculate_workload_balance_score(schedule)
 

@@ -14,7 +14,7 @@ def _conflicts_with_personal_events(cls: ClassSection, personal_events: list[Per
     Chỉ xét sự kiện có day_of_week (is_recurring hoặc có thứ cố định).
     """
     for event in personal_events:
-        if event.day_of_week is None:
+        if event.day_of_week is None or not event.is_recurring:
             continue
         if (cls.day_of_week == event.day_of_week
             and cls.start_time < event.end_time
@@ -161,9 +161,9 @@ def _backtrack(
     next_unassigned = [c for c in unassigned if c != course_id]
     
     # Bước 4 - Sử dụng thêm LCV để lựa chọn nhóm lớp có ít xung đột với nhóm lớp các môn khác
-    lcv_classess = _choose_next_section_of_course(course_id, domains, next_unassigned, conflict_set)
+    lcv_classes = _choose_next_section_of_course(course_id, domains, next_unassigned, conflict_set)
 
-    for cls in lcv_classess:
+    for cls in lcv_classes:
 
         # Bước 4a lọc PersonalEvents
         if _conflicts_with_personal_events(cls, personal_events):

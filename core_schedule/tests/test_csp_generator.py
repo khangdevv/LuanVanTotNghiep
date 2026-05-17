@@ -6,36 +6,33 @@ import sys
 from datetime import time
 from pathlib import Path
 
-import pytest
-
-from csp_generator import generate_schedules
-from data_loader import DEFAULT_JSON_PATH, DEFAULT_SEMESTER_ID, load_course_groups
-from detect_conflicts import build_conflict_set
-from models import ClassSection, PersonalEvent
-from demo.time_utils import tiet_to_time
-
-# Path setup
+# Path setup — phải đứng trước mọi local import
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
-# Loader: JSON → CourseGroups
+import pytest  # noqa: E402
+
+from csp_generator import generate_schedules  # noqa: E402
+from data_loader import DEFAULT_JSON_PATH, DEFAULT_SEMESTER_ID, load_course_groups  # noqa: E402
+from detect_conflicts import build_conflict_set  # noqa: E402
+from models import ClassSection, PersonalEvent  # noqa: E402
+from demo.time_utils import tiet_to_time  # noqa: E402
+
+# Loader
 JSON_PATH = DEFAULT_JSON_PATH
 SEMESTER_ID = DEFAULT_SEMESTER_ID   # dùng cho class_id và semester_id
 
 
-# Chỉnh sửa ba biến dưới đây để test theo nhu cầu thực tế.
-# Danh sách mã môn muốn xếp lịch (phải có trong schedule_data_from_web.json)
+# Danh sách mã môn muốn xếp lịch 
 COURSE_IDS = [
    "CS03042", "CS03002", "CS09002", "GS49005", "GS19008", "CS03058", "GS79005", "GS33002",
 ]
 
 # Ngày muốn tránh (2=Thứ2 … 8=CN). Sửa tuỳ ý.
-# Ví dụ: {6, 7} = tránh Thứ 6 và Thứ 7
 AVOID_DAYS: set[int] = {6, 7, 8}
 
-# Lịch bận cá nhân. Sao chép và sửa từng mẫu theo nhu cầu.
+# Lịch bận cá nhân
 PERSONAL_EVENTS: list[PersonalEvent] = [
-    # Mẫu 1: sự kiện lặp hàng tuần — Thứ 4 buổi trưa
     PersonalEvent(
         event_id    = 1,
         student_id  = "test_student",
@@ -79,13 +76,13 @@ def valid_schedules(course_groups, conflict_set) -> list[dict]:
 # ── TEST: tiet_to_time ─────────────────────────────────────────────────────
 class TestTietToTime:
     def test_tiet_1_6(self):
-        """Tiết 1-6: 07:00 – 12:05 (khớp ảnh chụp màn hình)"""
+        """Tiết 1-6: 07:00 – 12:05 """
         start, end = tiet_to_time(1, 6)
         assert start == time(7, 0)
         assert end   == time(12, 5)
 
     def test_tiet_7_12(self):
-        """Tiết 7-12: 12:35 – 17:40 (khớp ảnh chụp màn hình)"""
+        """Tiết 7-12: 12:35 – 17:40 """
         start, end = tiet_to_time(7, 6)
         assert start == time(12, 35)
         assert end   == time(17, 40)
@@ -111,7 +108,7 @@ class TestTietToTime:
     def test_lunch_boundary(self):
         """
         Tiết 6 kết thúc lúc 12:05, Tiết 7 bắt đầu 12:35.
-        Hai lớp này không xung đột (12:05 == 12:35 là false, SRS 6.1.1).
+        Hai lớp này không xung đột (12:05 == 12:35 là false)
         """
         _, end_tiet6   = tiet_to_time(6, 1)   # 12:05
         start_tiet7, _ = tiet_to_time(7, 1)   # 12:35
@@ -195,7 +192,7 @@ class TestConflictSet:
 
     def test_boundary_no_conflict(self, all_classes):
         """
-        Lớp A kết thúc đúng lúc lớp B bắt đầu → KHÔNG xung đột (SRS 6.1.1).
+        Lớp A kết thúc đúng lúc lớp B bắt đầu → KHÔNG xung đột
         Ví dụ: Tiết 6 kết thúc 12:05, Tiết 7 bắt đầu 12:35.
         """
         # Tạo 2 lớp giả đúng boundary
@@ -411,7 +408,7 @@ def _print_schedule(idx: int, sched: dict) -> None:
     print(f"{'Mon':<12} {'Nhom':<25} {'Thu':<8} {'Gio':<14} {'Phong':<12} GV")
     print(f"{'-'*70}")
     for cid, cls in sorted(sched.items(), key=lambda x: x[1].day_of_week):
-        nhom = cls.class_id.replace(cid + "_", "")
+        nhom = cls.class_id.replace(cid + "_", "").rsplit("_t", 1)[0]
         day  = DAY_LABEL.get(cls.day_of_week, str(cls.day_of_week))
         gio  = f"{cls.start_time.strftime('%H:%M')}-{cls.end_time.strftime('%H:%M')}"
         print(f"{cid:<12} {nhom:<25} {day:<8} {gio:<14} {cls.room or '-':<12} {cls.instructor or '-'}")

@@ -50,6 +50,7 @@ Tất cả điểm thành phần đều nằm trong **[0.0, 1.0]**, điểm tổ
 |---|---|---|---|
 | `student_id` | `str` | bắt buộc | Mã sinh viên |
 | `preferred_slot` | `PreferredSlot` | `MORNING` | Ca học ưa thích |
+| `min_break_minutes` | `int` | `15` | Số phút nghỉ tối thiểu mong muốn giữa 2 tiết |
 | `w_break` | `float` | `0.40` | Trọng số tiêu chí khoảng nghỉ |
 | `w_preference` | `float` | `0.30` | Trọng số tiêu chí sở thích |
 | `w_balance` | `float` | `0.30` | Trọng số tiêu chí cân bằng |
@@ -110,19 +111,18 @@ time(7, 30)  →  7 × 60 + 30  =  450
 time(12, 5)  →  12 × 60 + 5  =  725
 ```
 
-### `_get_ca_num(t) -> int | None`
+### `_get_ca_num(t) -> int`
 
-Xác định tiết học bắt đầu ở **ca số mấy** dựa trên giờ bắt đầu.
+Xác định tiết học bắt đầu ở **ca số mấy** dựa trên khoảng giờ. Không yêu cầu đúng giờ bắt đầu ca chuẩn — lớp bắt đầu ở bất kỳ tiết nào trong ca đều được nhận diện đúng.
 
-| Giờ bắt đầu | Ca trả về |
+| Khoảng giờ bắt đầu | Ca trả về |
 |---|---|
-| đúng 07:00 (420 phút) | 1 |
-| đúng 09:35 (575 phút) | 2 |
-| đúng 12:35 (755 phút) | 3 |
-| ≥ 15:10 (910 phút) | 4 |
-| Khác | `None` |
+| trước 09:35 | 1 |
+| 09:35 – 12:34 | 2 |
+| 12:35 – 15:09 | 3 |
+| 15:10 trở đi | 4 |
 
-> Ca 4 dùng `>=` vì giờ vào ca 4 có thể bắt đầu muộn hơn mốc chuẩn.
+> Không bao giờ trả `None` — mọi giờ bắt đầu hợp lệ đều được ánh xạ về Ca 1–4.
 
 ### `_clamp_01(value) -> float`
 
@@ -134,24 +134,30 @@ Giới hạn giá trị trong đoạn [0.0, 1.0].
  1.3  →  1.0
 ```
 
-### `_gap_score(gap: int) -> float`
+### `_gap_score(gap: int, min_break: int) -> float`
 
-Ánh xạ **số phút nghỉ** giữa 2 tiết liền kề → điểm chất lượng (hàm bậc thang).
+Ánh xạ **số phút nghỉ** giữa 2 tiết liền kề → điểm chất lượng.
+
+Phần dưới ngưỡng dùng `min_break` cá nhân làm chuẩn (tuyến tính). Phần trên ngưỡng dùng hằng số trường (cấu trúc ca học cố định).
 
 | Khoảng nghỉ | Điểm | Lý do |
 |---|---|---|
 | < 0 phút | 0.0 | Chồng lịch (lỗi dữ liệu) |
-| 0–9 phút | 0.2 | Quá gấp, không kịp di chuyển |
-| 10–90 phút | **1.0** | Lý tưởng |
-| 91–180 phút | 0.7 | Chấp nhận được |
-| 181–300 phút | 0.4 | Bỏ trống gần 1 ca |
-| > 300 phút | 0.1 | Bỏ trống 2 ca trở lên |
+| 0 – `min_break-1` phút | `gap / min_break` | Chưa đủ ngưỡng nghỉ — tuyến tính |
+| `min_break` – 90 phút | **1.0** | Đủ nghỉ, vùng lý tưởng |
+| 91 – 180 phút | 0.7 | Bỏ trống ~1 ca |
+| 181 – 300 phút | 0.4 | Bỏ trống ~2 ca |
+| > 300 phút | 0.1 | Quá dài, lãng phí thời gian |
+
+> Ngưỡng 90 / 180 / 300 phút gắn với cấu trúc ca STU (1 ca ≈ 150 phút), không phụ thuộc `min_break`.
 
 ```
-Trực quan:
-  0   10         90   91        180  181       300  301+
-  |──|───────────|    |──────────|    |─────────|    |───
- 0.2     1.0          0.7              0.4            0.1
+Với min_break = 15 (mặc định):
+
+  0      15         90   91        180  181       300  301+
+  |──────|───────────|    |──────────|    |─────────|    |───
+  0→1.0      1.0          0.7              0.4            0.1
+  (tuyến tính)
 ```
 
 ---
@@ -162,10 +168,10 @@ Trực quan:
 
 **Chữ ký:**
 ```python
-def calculate_break_time_score(schedule: list[ClassSection]) -> float
+def calculate_break_time_score(schedule: list[ClassSection], min_break: int = 15) -> float
 ```
 
-**Mục đích:** Đánh giá chất lượng khoảng nghỉ giữa các tiết trong từng ngày học.
+**Mục đích:** Đánh giá chất lượng khoảng nghỉ giữa các tiết trong từng ngày học. Dùng `min_break` của sinh viên làm ngưỡng chuẩn để chấm điểm khoảng nghỉ ngắn.
 
 **Thuật toán từng bước:**
 
@@ -179,8 +185,8 @@ Bước 3: Tính gap giữa mỗi cặp tiết liền kề
         gap = start_time(tiết sau) − end_time(tiết trước)  [đơn vị: phút]
 
 Bước 4: Chấm điểm từng gap
-        - Nếu (end, start) ∈ _DESIGNED_GAPS → điểm 1.0 (khoảng nghỉ chuẩn STU)
-        - Ngược lại → _gap_score(gap)
+        - Nếu (end, start) ∈ _DESIGNED_GAPS → điểm 1.0 (giờ ra chơi STU thiết kế sẵn)
+        - Ngược lại → _gap_score(gap, min_break)
 
 Bước 5: Trả về trung bình cộng tất cả điểm gap
         - Nếu không có gap nào (mỗi ngày ≤ 1 tiết) → trả 1.0
@@ -259,7 +265,9 @@ def calculate_workload_balance_score(schedule: list[ClassSection]) -> float
 Bước 1: Đếm số tiết mỗi ngày
         {2: 3, 4: 1, 6: 2}  →  counts = [3, 1, 2]
 
-Bước 2: Nếu chỉ học 1 ngày → trả 1.0 (không thể so sánh)
+Bước 2: Xử lý trường hợp chỉ có 1 ngày học
+        - Đúng 1 lớp → không có gì để cân bằng → trả 1.0
+        - Nhiều lớp cùng 1 ngày → phân bổ tệ nhất → trả 0.0
 
 Bước 3: Tính phương sai
         avg      = mean(counts)
@@ -276,6 +284,8 @@ Phương sai tối đa tham chiếu = 9.0 (tương đương lịch rất mất c
 
 | Trường hợp | Phương sai | Điểm |
 |---|---|---|
+| 1 lớp duy nhất | — | **1.0** |
+| 8 lớp cùng 1 ngày | — | **0.0** |
 | Đều hoàn toàn (3, 3, 3) | 0.0 | **1.0** |
 | Lệch nhẹ (2, 3, 4) | 0.67 | 0.93 |
 | Lệch vừa (1, 2, 4) | 1.56 | 0.83 |
