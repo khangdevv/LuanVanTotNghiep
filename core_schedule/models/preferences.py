@@ -1,3 +1,5 @@
+from typing import Optional
+
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from enums import PreferredSlot
@@ -6,6 +8,7 @@ from enums import PreferredSlot
 class Preference(BaseModel):
     model_config = ConfigDict(str_strip_whitespace=True)
 
+    pref_id: Optional[int] = None   
     student_id: str = Field(min_length=1, max_length=20)
     preferred_slot: PreferredSlot = PreferredSlot.MORNING
     min_break_minutes: int = Field(default=15, ge=0)
