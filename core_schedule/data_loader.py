@@ -51,7 +51,7 @@ def load_course_groups(
                 end_time=end,
                 room=lich.get("phong"),
                 instructor=lich.get("giang_vien"),
-                max_students=1,
+                max_students=1,  # TODO: nhận từ BE khi tích hợp API
             )
         )
 

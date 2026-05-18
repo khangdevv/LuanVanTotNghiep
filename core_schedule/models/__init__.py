@@ -1,5 +1,6 @@
 from .classes import ClassSection
 from .course import Course
+from .enrollment import Enrollment
 from .personal_events import PersonalEvent
 from .preference_avoiddays import PreferenceAvoidDay
 from .preferences import Preference
@@ -11,6 +12,7 @@ from .student import Student
 __all__ = [
     "ClassSection",
     "Course",
+    "Enrollment",
     "PersonalEvent",
     "PreferenceAvoidDay",
     "Preference",

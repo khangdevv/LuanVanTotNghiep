@@ -13,6 +13,7 @@
 6. [Hàm tổng hợp](#6-hàm-tổng-hợp-calculate_total_score)
 7. [Luồng dữ liệu tổng thể](#7-luồng-dữ-liệu-tổng-thể)
 8. [Ví dụ minh họa](#8-ví-dụ-minh-họa)
+9. [Sai khác so với SRS v1.0](#9-sai-khác-so-với-srs-v10)
 
 ---
 
@@ -492,3 +493,144 @@ total = 0.40 × 1.0000
     "workload_balance": 0.9722,
 }
 ```
+
+---
+
+## 9. Sai khác so với SRS v1.0
+
+> **Mục đích:** Ghi lại những điểm implementation hiện tại **khác** với đặc tả SRS v1.0 (Chương 6.2) để báo cáo điều chỉnh lên giảng viên hướng dẫn.
+
+---
+
+### 9.1 F_break — Chất lượng khoảng nghỉ
+
+#### SRS v1.0 (mục 6.2.2)
+
+```
+f_break_d = mean( min(gap_i / (2 × min_break), 1.0)  for all gap_i in ngày d )
+F_break(S) = mean( f_break_d  for all d có ≥ 2 buổi )
+Nếu không ngày nào có ≥ 2 buổi → F_break = 1.0
+```
+
+- **Ngưỡng đạt 1.0:** `gap ≥ 2 × min_break` (với min_break=15 → cần ≥ 30 phút).
+- **Không có phạt** cho khoảng nghỉ quá dài.
+- **Không có** khái niệm "designed gaps" (giờ ra chơi STU).
+
+#### Implementation hiện tại
+
+```python
+def _gap_score(gap, min_break):
+    if gap < 0:         return 0.0
+    if gap < min_break: return gap / min_break   # chia min_break, không phải 2×min_break
+    if gap <= 90:       return 1.0               # vùng lý tưởng (cứng)
+    if gap <= 180:      return 0.7               # bỏ trống ~1 ca — phạt
+    if gap <= 300:      return 0.4               # bỏ trống ~2 ca — phạt
+    return 0.1                                   # quá dài — phạt nặng
+
+# Nếu (end_min, start_min) ∈ _DESIGNED_GAPS → điểm 1.0 (bỏ qua công thức trên)
+```
+
+#### Bảng so sánh
+
+| Khía cạnh | SRS v1.0 | Implementation |
+|---|---|---|
+| Công thức gap score | `min(gap / (2×min_break), 1.0)` | Step function theo 4 vùng |
+| Ngưỡng đạt điểm 1.0 | `gap ≥ 2 × min_break` | `min_break ≤ gap ≤ 90` |
+| Phạt nghỉ quá dài | Không có | Có (0.7 / 0.4 / 0.1) |
+| Giờ ra chơi STU | Không đề cập | `_DESIGNED_GAPS` → luôn 1.0 |
+
+#### Lý do điều chỉnh
+
+1. **Chia `min_break` thay vì `2×min_break`:** Công thức SRS yêu cầu gap gấp đôi ngưỡng mới đạt 1.0, dẫn đến tình huống lịch chuẩn STU (nghỉ 5 phút giữa Ca1→Ca2) bị phạt nặng dù đây là thiết kế của trường. Điều chỉnh về `min_break` để ngưỡng đạt điểm 1.0 bằng đúng mức sinh viên đặt ra.
+2. **Phạt khoảng nghỉ quá dài:** SRS không phạt gap lớn, nhưng thực tế khoảng trống >3 tiết lãng phí thời gian di chuyển/chờ đợi. Step function bổ sung hành vi này.
+3. **`_DESIGNED_GAPS`:** STU có 3 khoảng nghỉ cố định (5–30 phút) được nhà trường thiết kế sẵn. Đây không phải "nghỉ quá ngắn" mà là lịch chuẩn, cần cho điểm 1.0 trực tiếp thay vì áp công thức phạt.
+
+---
+
+### 9.2 F_pref — Độ khớp sở thích
+
+#### SRS v1.0 (mục 6.2.3)
+
+```
+match_i = 1  nếu buổi học i thuộc khung giờ ưa thích VÀ không học vào ngày avoid
+match_i = 0  ngược lại (thiếu một trong hai điều kiện là 0 hết)
+F_pref(S) = (số buổi match) / (tổng số buổi)
+```
+
+SRS dùng logic **AND cứng (binary)**: chỉ cần một điều kiện sai là điểm tiết = 0.
+
+#### Implementation hiện tại
+
+```python
+time_score = 1.0 if ca_num in preferred_cas else 0.0
+day_score  = 0.0 if day_of_week in avoid_set else 1.0
+score_per_class = (time_score + day_score) / 2   # trung bình cộng
+```
+
+Implementation dùng **trung bình cộng (partial credit)**: mỗi tiết được điểm riêng.
+
+#### Bảng so sánh điểm từng tiết
+
+| Khớp ca? | Bị tránh ngày? | SRS v1.0 | Implementation |
+|---|---|---|---|
+| ✅ | ❌ | **1.0** | **1.0** |
+| ✅ | ✅ | **0.0** | **0.5** |
+| ❌ | ❌ | **0.0** | **0.5** |
+| ❌ | ✅ | **0.0** | **0.0** |
+
+#### Lý do điều chỉnh
+
+SRS xử lý AND cứng khiến một lớp sai ca nhưng đúng ngày vẫn bị 0 điểm — không phân biệt được "hoàn toàn sai" với "đúng một nửa". Partial credit phản ánh đúng hơn mức độ phù hợp: lớp học vào Ca 1 dù không phải ca ưa thích nhưng không rơi vào ngày tránh vẫn tốt hơn lớp học vào ngày tránh. Cách này cũng tránh ép Score(S) về 0 chỉ vì một tiết lệch ca.
+
+---
+
+### 9.3 F_balance — Cân bằng khối lượng
+
+#### SRS v1.0 (mục 6.2.4)
+
+```
+σ   = độ lệch chuẩn của {n_d}  (std dev)
+n_max = max(n_d)
+F_balance(S) = 1 − (σ / n_max)   [nếu chỉ 1 ngày học → 0.5]
+```
+
+- Chuẩn hóa **thích nghi** theo `n_max`.
+- Chỉ 1 ngày học → cố định **0.5**.
+
+#### Implementation hiện tại
+
+```python
+avg      = mean(counts)
+variance = mean((c − avg)² for c in counts)     # phương sai, không phải σ
+score    = clamp(1.0 − variance / 9.0, 0, 1)    # hằng số 9.0 cố định
+
+# Trường hợp đặc biệt:
+# - 1 lớp học duy nhất   → 1.0
+# - Nhiều lớp cùng 1 ngày → 0.0
+```
+
+#### Bảng so sánh
+
+| Khía cạnh | SRS v1.0 | Implementation |
+|---|---|---|
+| Đo lường phân tán | Độ lệch chuẩn σ | Phương sai (variance) |
+| Chuẩn hóa | Thích nghi theo `n_max` | Hằng số cố định `9.0` |
+| Chỉ 1 ngày học | 0.5 | 1 lớp → 1.0; nhiều lớp cùng ngày → 0.0 |
+
+#### Lý do điều chỉnh
+
+1. **Phương sai thay vì σ:** Cả hai đều đo độ phân tán. Dùng phương sai trực tiếp đơn giản hơn (không cần sqrt), phù hợp hơn với mục đích chuẩn hóa về khoảng [0,1].
+2. **Hằng số 9.0 thay vì `n_max`:** Chuẩn hóa theo `n_max` có vấn đề khi `n_max = 1` (mẫu số nhỏ) hoặc khi σ > n_max (điểm âm). Hằng số 9.0 đặt mức "lịch rất mất cân bằng" (ví dụ 0 vs 3 tiết/ngày cho 3 ngày) tương đương variance≈9, đảm bảo score không âm và nhất quán hơn.
+3. **Trường hợp 1 ngày học:** SRS trả 0.5 cố định — không phân biệt 1 lớp và nhiều lớp dồn cùng ngày. Implementation phân biệt: 1 lớp duy nhất thì không cần cân bằng (1.0), còn nhiều lớp cùng 1 ngày là mất cân bằng tệ nhất (0.0).
+
+---
+
+### 9.4 Tổng kết sai khác
+
+| # | Thành phần | Điểm khác biệt chính | Mức độ ảnh hưởng |
+|---|---|---|---|
+| 1 | F_break | Ngưỡng đạt 1.0 (`min_break` vs `2×min_break`); step-function phạt gap lớn; `_DESIGNED_GAPS` | **Cao** — thay đổi giá trị số rõ rệt |
+| 2 | F_pref | Partial credit (0.5) vs AND cứng (0/1) khi chỉ khớp một trong hai điều kiện | **Trung bình** — chỉ ảnh hưởng khi có tiết "khớp một nửa" |
+| 3 | F_balance | Phương sai/9.0 vs σ/n_max; xử lý 1 ngày học khác | **Trung bình** — giá trị lệch nhau nhưng thứ tự xếp hạng tương tự |
+
+> **Ghi chú cho buổi báo cáo:** Cả ba điều chỉnh đều có lý do cụ thể gắn với thực tế lịch STU (ca học cố định, giờ ra chơi) và tính ổn định số học của công thức. Có thể trình bày như "refinement có căn cứ" chứ không phải "sai SRS".
