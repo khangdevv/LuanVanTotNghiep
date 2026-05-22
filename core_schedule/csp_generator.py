@@ -24,7 +24,7 @@ def _conflicts_with_personal_events(cls: ClassSection, personal_events: list[Per
 
 
 # 2. Khởi tạo domain (lọc avoid_days)
-def _init_domains(course_groups: CourseGroups, avoid_days: set[int]) -> Domains:
+def _init_domains(course_groups: CourseGroups, avoid_days: list[int]) -> Domains:
     """
     Với mỗi môn, loại bỏ ngay các nhóm lớp nằm vào ngày sinh viên muốn tránh.
     Domain còn lại là các lựa chọn hợp lệ trước khi sử dụng backtracking.
@@ -57,7 +57,8 @@ def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
 
 
 # chọn lớp có ít xung đột nhất với các lớp của môn khác
-def _choose_next_section_of_course(course_id : str, domains: Domains, unassigned: list[str], conflict_set: ConflictSet) -> list[ClassSection]:
+def _choose_next_section_of_course(course_id : str, domains: Domains, unassigned: list[str], 
+                                   conflict_set: ConflictSet) -> list[ClassSection]:
     candidates = domains[course_id]
     
     scored = []
@@ -197,7 +198,7 @@ def _backtrack(
 def generate_schedules(
     course_groups: CourseGroups,
     conflict_set: ConflictSet,
-    avoid_days: set[int],
+    avoid_days: list[int],
     personal_events: list[PersonalEvent],
     max_solutions: int = 200,
 ) -> list[Schedule]:

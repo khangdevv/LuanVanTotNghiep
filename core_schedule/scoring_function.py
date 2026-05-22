@@ -12,6 +12,7 @@ _CA_MINUTES = (420, 575, 755, 910)  # Ca1–Ca4 quy ra phút từ 00:00
 _SLOT_TO_CAS: dict[PreferredSlot, set[int]] = {
     PreferredSlot.MORNING:   {1, 2},
     PreferredSlot.AFTERNOON: {3, 4},
+    PreferredSlot.EVENING:   {4},
 }
 
 
@@ -117,10 +118,10 @@ def calculate_total_score(schedule: list[ClassSection], preferences: Preference,
     )
 
     return {
-        "total":            total,
-        "break_time":       round(break_score, 4),
-        "preference_match": round(preference_score, 4),
-        "workload_balance": round(balance_score, 4),
+        "score_total":   total,
+        "score_break":   round(break_score, 4),
+        "score_pref":    round(preference_score, 4),
+        "score_balance": round(balance_score, 4),
     }
 
 

@@ -13,5 +13,7 @@ class Schedule(BaseModel):
     score_break: float = Field(ge=0, le=1)
     score_pref: float = Field(ge=0, le=1)
     score_balance: float = Field(ge=0, le=1)
-    is_selected: bool = False
+    is_draft: bool = True      
+    is_selected: bool = False   
+    is_active: bool = False    
     created_at: datetime = Field(default_factory=datetime.now)

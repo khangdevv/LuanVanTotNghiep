@@ -85,7 +85,7 @@ class TestGenerateSchedules:
         result = generate_schedules(
             course_groups=course_groups,
             conflict_set=conflict_set,
-            avoid_days={2, 3, 4, 5, 6, 7, 8},
+            avoid_days=[2, 3, 4, 5, 6, 7, 8],
             personal_events=[],
             max_solutions=10,
         )
@@ -96,7 +96,7 @@ class TestGenerateSchedules:
         result = generate_schedules(
             course_groups={},
             conflict_set=conflict_set,
-            avoid_days=set(),
+            avoid_days=[],
             personal_events=[],
         )
         assert result == []

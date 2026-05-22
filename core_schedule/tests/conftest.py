@@ -1,3 +1,6 @@
+"""
+    python -m pytest
+"""
 import io
 import sys
 from datetime import time
@@ -25,7 +28,7 @@ COURSE_IDS = [
     "GS19008", "CS03058", "GS79005", "GS33002",
 ]
 
-AVOID_DAYS: set[int] = {6, 7, 8}
+AVOID_DAYS: list[int] = [6, 7, 8]
 
 PERSONAL_EVENTS: list[PersonalEvent] = [
     PersonalEvent(

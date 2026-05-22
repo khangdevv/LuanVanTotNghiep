@@ -42,11 +42,11 @@ ROOT = Path(__file__).parent.parent   # trỏ về core/
 # chỉnh sửa theo nhu cầu
 COURSE_IDS: list[str] = [
     "CS03042", "CS03002", "CS09002", "GS49005",
-    "GS19008", "CS03058", "GS79005", "GS33002",
+    "GS19008", "CS03058", "CS03043", "CS03057",
 ]
 
 # Ngày muốn tránh (2=Thứ 2 … 8=CN)
-AVOID_DAYS: set[int] = {6, 7, 8}
+AVOID_DAYS: list[int] = [5, 6, 7, 8]
 
 # Lịch bận cá nhân
 PERSONAL_EVENTS: list[PersonalEvent] = [
@@ -54,9 +54,9 @@ PERSONAL_EVENTS: list[PersonalEvent] = [
         event_id    = 1,
         student_id  = "demo_student",
         title       = "Làm thêm quán cà phê",
-        day_of_week = 4,
+        day_of_week = 5,
         start_time  = time(12, 35),
-        end_time    = time(15, 5),
+        end_time    = time(18, 00),
         is_recurring= True,
     ),
 ]
@@ -70,8 +70,8 @@ PREFERENCE =  Preference(
         w_balance = 0.3
     )
 
-MAX_SOLUTIONS = 200   # giới hạn số TKB sinh ra
-PRINT_MAX     = 200   # số TKB in ra
+MAX_SOLUTIONS = 200000   # giới hạn số TKB sinh ra
+PRINT_MAX     = 200000   # số TKB in ra
 
 # Loader
 JSON_PATH = DEFAULT_JSON_PATH
@@ -130,12 +130,12 @@ def main() -> None:
     schedule_scores: list[tuple[dict[str, ClassSection], dict[str, float]]] = []
     t4 = perf_counter()
     for schedule in schedules:
-        score = calculate_total_score(list(schedule.values()), PREFERENCE, list(AVOID_DAYS))
+        score = calculate_total_score(list(schedule.values()), PREFERENCE, AVOID_DAYS)
         schedule_scores.append((schedule, score))
     print(f"    → Tính điểm {len(schedules)} TKB: {perf_counter()-t4:.3f}s")
 
     t5 = perf_counter()
-    schedule_scores.sort(key=lambda x: x[1]["total"], reverse=True)
+    schedule_scores.sort(key=lambda x: x[1]["score_total"], reverse=True)
     print(f"    → Sắp xếp: {perf_counter()-t5:.3f}s")
 
     print(f"\n    Tổng thời gian: {perf_counter()-t0:.3f}s")
@@ -153,10 +153,10 @@ def main() -> None:
         if count >= 3:
             break
 
-        print(f"\nDiem: {score['total']}")
-        print(f"  - Break time      : {score['break_time']}")
-        print(f"  - Preference match: {score['preference_match']}")
-        print(f"  - Workload balance: {score['workload_balance']}")
+        print(f"\nDiem: {score['score_total']}")
+        print(f"  - Break time      : {score['score_break']}")
+        print(f"  - Preference match: {score['score_pref']}")
+        print(f"  - Workload balance: {score['score_balance']}")
         print_schedule(i, schedule)
         count+=1
 

@@ -16,9 +16,9 @@ def load_course_groups(
     semester_id: str = DEFAULT_SEMESTER_ID,  
 ) -> dict[str, list[ClassSection]]:
     raw: list[dict] = json.loads(json_path.read_text(encoding="utf-8"))
-    # Dedup theo (môn, nhóm, tiết bắt đầu) — giữ mỗi khung giờ duy nhất 1 lần.
+    # duyệt theo (môn, nhóm, tiết bắt đầu) — giữ mỗi khung giờ duy nhất 1 lần.
     # Cùng nhóm khác tiết (giai đoạn xen kẽ) → 2 lựa chọn độc lập trong CSP.
-    # Cùng nhóm khác thứ nhưng cùng tiết (dữ liệu bất thường) → dedup, lấy dòng đầu.
+    # Cùng nhóm khác thứ nhưng cùng tiết (dữ liệu bất thường) → lấy dòng đầu.
     seen: set[tuple[str, str, int]] = set()
     groups: dict[str, list[ClassSection]] = {cid: [] for cid in course_ids}
 
