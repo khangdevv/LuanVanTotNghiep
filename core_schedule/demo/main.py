@@ -46,7 +46,7 @@ COURSE_IDS: list[str] = [
 ]
 
 # Ngày muốn tránh (2=Thứ 2 … 8=CN)
-AVOID_DAYS: list[int] = [5, 6, 7, 8]
+AVOID_DAYS: list[int] = [6, 7, 8]
 
 # Lịch bận cá nhân
 PERSONAL_EVENTS: list[PersonalEvent] = [

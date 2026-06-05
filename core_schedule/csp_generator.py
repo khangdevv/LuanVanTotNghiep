@@ -97,10 +97,6 @@ def _forward_check(cls: ClassSection, unassigned: list[str], domains: Domains, c
     Sau khi gán một lớp cho môn hiện tại, loại các nhóm lớp xung đột
     khỏi domain của các môn chưa xét (lan truyền ràng buộc).
 
-    Dùng restore dict thay vì deep_copy:
-      - Chỉ ghi lại những gì bị xóa
-      - restore_domains hoàn tác chính xác, không ảnh hưởng phần tử khác
-
     Trả về:
       (True,  removed) nếu mọi domain còn ≥ 1 lựa chọn thì sẽ tiếp tục
       (False, removed) nếu có domain rỗng thì sẽ dẫn đến điểm chết, backtrack ngay
@@ -137,19 +133,7 @@ def _backtrack(
     valid_schedules: list[Schedule],
     max_solutions: int,
 ) -> None:
-    """
-    Đệ quy backtracking với MRV + Forward Checking.
-    Luồng mỗi bước:
-      1. Nếu đủ max_solutions thì dừng sớm.
-      2. Nếu đã gán hết môn thì lưu nghiệm.
-      3. MRV chọn môn tiếp theo.
-      4. Với mỗi nhóm lớp trong domain của môn đó:
-           a. Bỏ qua nếu xung đột PersonalEvents.
-           b. Bỏ qua nếu xung đột với môn đã gán (tra conflict_set để kiếm các cặp xung đột).
-           c. Gán thử bằng Forward Checking lan truyền ràng buộc.
-           d. Nếu môn được chọn chạy được thì đệ quy sâu hơn.
-           e. Restore domain rồi thử nhóm lớp tiếp theo (backtrack).
-    """
+
     if len(valid_schedules) >= max_solutions:
         return
 
@@ -194,7 +178,6 @@ def _backtrack(
             return
 
 
-# 6. Entry point 
 def generate_schedules(
     course_groups: CourseGroups,
     conflict_set: ConflictSet,
@@ -208,7 +191,6 @@ def generate_schedules(
 
     domains = _init_domains(course_groups, avoid_days)
 
-    # Domain rỗng ngay từ đầu thì sẽ không thể có nghiệm
     if any(len(domains[c]) == 0 for c in domains):
         return []
 
