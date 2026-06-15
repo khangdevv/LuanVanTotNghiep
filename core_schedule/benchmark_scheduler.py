@@ -10,13 +10,13 @@ from data_loader import load_course_groups, DEFAULT_JSON_PATH
 from detect_conflicts import build_conflict_set
 from models import PersonalEvent
 import csp_generator
+import or_tools_generator
 
 random.seed(42)
 
 COURSE_IDS = [
     "CS03042", "CS03002", "CS09002", "GS49005", "GS19008",
-    "CS03058", "CS03043", "CS03057", "CS03056", "CS03102",
-    "CS03104", "GS19001", "GS19005", "CS03001", "CS03050"
+    "CS03058", "CS03043", "CS03057", "CS03001",
 ]
 
 RUNS_PER_LEVEL = 20
@@ -80,27 +80,34 @@ def run_single_test(
         max_solutions=max_solutions
     )
 
+    ort_schedules = or_tools_generator.solve_schedule(
+        course_groups=course_groups,
+        conflict_set=conflict_set,
+        avoid_days=avoid_days,
+        personal_events=personal_events,
+        max_solutions=max_solutions
+    )
+
     return {
         "num_courses": len(course_groups),
         "num_sections": len(all_classes),
+        "course_ids": list(course_groups.keys()),
+        "sections_per_course": {cid: len(secs) for cid, secs in course_groups.items()},
         "feasible": len(schedules) > 0,
+        "bt_found": len(schedules),
+        "ort_feasible": len(ort_schedules) > 0,
+        "ort_found": len(ort_schedules),
     }
 
 
-def run_benchmark():
-    print("=" * 72)
-    print("  Test thanh cong va that bai  ")
-    print("=" * 72)
 
+
+def run_benchmark():
     results_by_level: dict[int, list[dict]] = {}
 
     for n in range(1, 9):
         avoid_days_count, events_count = _constraint_profile(n)
-        print(
-            f"\n>>> Muc {n:>2}: {n} mon | "
-            f"{avoid_days_count} ngay tranh | "
-            f"{events_count} lich ban  ({RUNS_PER_LEVEL} luot chay)..."
-        )
+        print(f"Dang chay muc {n}/8...", flush=True)
 
         results: list[dict] = []
         for _ in range(RUNS_PER_LEVEL):
@@ -116,18 +123,6 @@ def run_benchmark():
 
         results_by_level[n] = results
 
-        total = len(results)
-        if total == 0:
-            print("Khong co ket qua hop le.")
-            continue
-
-        feasible_count = sum(1 for r in results if r["feasible"])
-        infeasible_count = total - feasible_count
-        success_rate = (feasible_count / total) * 100
-
-        print(f"    Co nghiem (thanh cong)  : {success_rate:.1f}%  ({feasible_count}/{total})")
-        print(f"    Khong co nghiem (that bai): {100 - success_rate:.1f}%  ({infeasible_count}/{total})")
-
     generate_markdown_report(results_by_level)
 
 
@@ -135,84 +130,74 @@ def generate_markdown_report(results_by_level: dict[int, list[dict]]):
     report_path = Path("BACKTRACKING_PERFORMANCE_REPORT.md")
 
     lines: list[str] = []
-
-    lines.append("# Báo cáo Thực nghiệm: Tỉ lệ Có nghiệm / Không có nghiệm của Thuật toán Backtracking")
-    lines.append(
-        "\nBáo cáo trình bày kết quả đo lường tỉ lệ có nghiệm (thành công) và không có nghiệm (thất bại) "
-        "của thuật toán Backtracking (kết hợp MRV, LCV và Forward Checking) "
-        "khi số môn đăng ký tăng từ 1 đến 8 với ràng buộc tăng dần."
-    )
-
-    lines.append("\n## 1. Phương pháp Thực nghiệm")
-    lines.append(f"- **Số lượt chạy mỗi mức**: {RUNS_PER_LEVEL} lượt (tổng {RUNS_PER_LEVEL * 8} lượt).")
-    lines.append("- **Bộ dữ liệu**: `schedule_data_from_web.json` — dữ liệu lịch học thực tế của trường STU.")
-    lines.append("- **Ràng buộc tăng dần** theo số môn:\n")
-    lines.append("| Số môn | Ngày tránh | Lịch bận cá nhân | Độ khó |")
-    lines.append("|--------|-----------|-----------------|--------|")
-    difficulty = {(1,2): "Rất dễ", (3,4): "Dễ", (5,6): "Trung bình", (7,8): "Khó"}
-    for n in range(1, 9):
-        av, ev = _constraint_profile(n)
-        diff = next(v for (a, b), v in difficulty.items() if a <= n <= b)
-        lines.append(f"| {n} | {av} | {ev} | {diff} |")
-
-    lines.append(f"\n- **Giới hạn lịch tối đa** (max_solutions): {MAX_SOLUTIONS}.")
-    lines.append("- **Các tiêu chí đánh giá**:")
-    lines.append("  1. **Tỉ lệ Có nghiệm (Thành công)**: Tỉ lệ lần chạy tìm được ≥ 1 lịch hợp lệ.")
-    lines.append("  2. **Tỉ lệ Không có nghiệm (Thất bại)**: Tỉ lệ lần chạy không tìm được lịch nào (0 nghiệm).")
-
-    lines.append("\n## 2. Bảng Thống kê Tỉ lệ Có nghiệm / Không có nghiệm\n")
-    lines.append(
-        "| Số môn | Ngày tránh | Lịch bận | "
-        "Có nghiệm | Không có nghiệm |"
-    )
-    lines.append("|--------|-----------|---------|----------|----------------|")
+    lines.append("# Báo cáo Thực nghiệm: Backtracking vs OR-Tools CP-SAT")
+    lines.append("")
+    lines.append(f"- **Số lượt chạy mỗi mức**: {RUNS_PER_LEVEL} lượt")
+    lines.append(f"- **Giới hạn tối đa TKB mỗi lượt**: {MAX_SOLUTIONS}")
+    lines.append("")
 
     for n in range(1, 9):
         results = results_by_level.get(n, [])
         av, ev = _constraint_profile(n)
         total = len(results)
-        if total == 0:
-            lines.append(f"| {n} | {av} | {ev} | N/A | N/A |")
-            continue
-        feasible_count = sum(1 for r in results if r["feasible"])
-        sr = (feasible_count / total) * 100
+
+        lines.append("---")
         lines.append(
-            f"| **{n}** | {av} | {ev} | "
-            f"**{sr:.1f}%** ({feasible_count}/{total}) | {100 - sr:.1f}% ({total - feasible_count}/{total}) |"
+            f"## Mức {n}: {n} môn học | {av} ngày tránh | {ev} lịch bận cá nhân"
         )
 
-    lines.append("\n## 3. Phân tích Kết quả")
+        if total == 0:
+            lines.append("_Không có kết quả._")
+            lines.append("")
+            continue
 
-    lines.append("\n### 3.1. Tỉ lệ Có nghiệm và Không có nghiệm")
-    lines.append(
-        "- **1–2 môn (rất dễ)**: Không có ràng buộc ngày tránh hay lịch bận. "
-        "Không gian tìm kiếm rộng → tỉ lệ có nghiệm gần **100%**."
-    )
-    lines.append(
-        "- **3–4 môn (dễ)**: Bổ sung 1 ngày tránh. Số ca học bị loại nhỏ, "
-        "thuật toán vẫn dễ tìm được nghiệm."
-    )
-    lines.append(
-        "- **5–6 môn (trung bình)**: 2 ngày tránh + 1 lịch bận cá nhân. "
-        "Xung đột bắt đầu xuất hiện, tỉ lệ không có nghiệm tăng nhẹ."
-    )
-    lines.append(
-        "- **7–8 môn (khó)**: 3 ngày tránh + 2 lịch bận. Số ca học hợp lệ "
-        "giảm mạnh, xung đột chồng chéo → tỉ lệ không có nghiệm tăng vọt."
-    )
+        # Bảng môn học
+        first = results[0]
+        lines.append("")
+        lines.append("**Danh sách môn học trong lần chạy mẫu:**")
+        lines.append("")
+        lines.append("| STT | Mã môn | Số nhóm lớp |")
+        lines.append("|-----|--------|-------------|")
+        for i, (cid, cnt) in enumerate(first["sections_per_course"].items(), 1):
+            lines.append(f"| {i} | {cid} | {cnt} nhóm |")
+        lines.append("")
 
-    lines.append("\n### 3.2. Kết luận")
+        # So sánh thuật toán
+        bt_ok   = sum(1 for r in results if r["feasible"])
+        ort_ok  = sum(1 for r in results if r["ort_feasible"])
+        bt_avg  = sum(r["bt_found"]  for r in results) / total
+        ort_avg = sum(r["ort_found"] for r in results) / total
+
+        lines.append("**Kết quả so sánh hai thuật toán:**")
+        lines.append("")
+        lines.append("| Thuật toán | Tìm được nghiệm | Tỉ lệ thành công | Số TKB trung bình |")
+        lines.append("|------------|----------------|-----------------|------------------|")
+        lines.append(f"| Backtracking | {bt_ok}/{total} | {bt_ok/total*100:.1f}% | {bt_avg:.1f} |")
+        lines.append(f"| OR-Tools CP-SAT | {ort_ok}/{total} | {ort_ok/total*100:.1f}% | {ort_avg:.1f} |")
+        lines.append("")
+
+
+    # ── Tổng hợp
+    lines.append("---")
+    lines.append("## Tổng hợp")
+    lines.append("")
+    total_runs = sum(len(r) for r in results_by_level.values())
+    total_bt   = sum(1 for rs in results_by_level.values() for r in rs if r["feasible"])
+    total_ort  = sum(1 for rs in results_by_level.values() for r in rs if r["ort_feasible"])
+
+    lines.append(f"- Tổng lượt chạy: **{total_runs}**")
     lines.append(
-        "Kết quả thực nghiệm cho thấy thuật toán Backtracking (CSP + MRV + LCV + FC) "
-        "có tỉ lệ tìm được nghiệm cao (**100%**) với **1–6 môn** trên bộ dữ liệu thực tế của trường STU. "
-        "Khi số môn tăng lên **7–8** kết hợp với nhiều ràng buộc ngày tránh và lịch bận cá nhân, "
-        "tỉ lệ không có nghiệm tăng đáng kể — phản ánh đúng thực tế rằng bài toán lúc này "
-        "trở nên vô nghiệm do không gian khả thi bị thu hẹp quá nhiều."
+        f"- Backtracking tìm được nghiệm: **{total_bt}/{total_runs}** "
+        f"({total_bt/total_runs*100:.1f}%)"
+    )
+    lines.append(
+        f"- OR-Tools CP-SAT tìm được nghiệm: **{total_ort}/{total_runs}** "
+        f"({total_ort/total_runs*100:.1f}%)"
     )
 
     report_path.write_text("\n".join(lines), encoding="utf-8")
-    print(f"\n[+] Bao cao da xuat: {report_path.resolve()}")
-    print("=" * 72 + "\n")
+    print(f"[+] Bao cao: {report_path}")
+
 
 
 if __name__ == "__main__":

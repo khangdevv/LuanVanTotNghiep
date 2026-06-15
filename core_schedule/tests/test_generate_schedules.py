@@ -68,17 +68,17 @@ class TestGenerateSchedules:
                         f"{cls.class_id} trùng với PersonalEvent '{event.title}'"
                     )
 
-    def test_max_solutions_respected(self, course_groups, conflict_set):
+    @pytest.mark.parametrize("limit", [1, 3, 5])
+    def test_max_solutions_respected(self, course_groups, conflict_set, limit):
         """Số nghiệm trả về không vượt quá max_solutions."""
-        for limit in [1, 3, 5]:
-            results = generate_schedules(
-                course_groups=course_groups,
-                conflict_set=conflict_set,
-                avoid_days=AVOID_DAYS,
-                personal_events=PERSONAL_EVENTS,
-                max_solutions=limit,
-            )
-            assert len(results) <= limit
+        results = generate_schedules(
+            course_groups=course_groups,
+            conflict_set=conflict_set,
+            avoid_days=AVOID_DAYS,
+            personal_events=PERSONAL_EVENTS,
+            max_solutions=limit,
+        )
+        assert len(results) <= limit
 
     def test_empty_when_all_days_avoided(self, course_groups, conflict_set):
         """Tránh tất cả các ngày → không có nghiệm."""

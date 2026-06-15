@@ -7,7 +7,7 @@ Schedule = dict[str, ClassSection]              # {course_id: ClassSection đã 
 Removed = dict[str, list[ClassSection]]         # snapshot để restore sau FC
 
 
-# 1. Lọc PersonalEvents
+# lọc PersonalEvents
 def _conflicts_with_personal_events(cls: ClassSection, personal_events: list[PersonalEvent]) -> bool:
     """
     Trả True nếu nhóm lớp trùng giờ với ít nhất một sự kiện cá nhân lặp lại hàng tuần.
@@ -23,7 +23,7 @@ def _conflicts_with_personal_events(cls: ClassSection, personal_events: list[Per
     return False
 
 
-# 2. Khởi tạo domain (lọc avoid_days)
+# khởi tạo domain (lọc avoid_days)
 def _init_domains(course_groups: CourseGroups, avoid_days: list[int]) -> Domains:
     """
     Với mỗi môn, loại bỏ ngay các nhóm lớp nằm vào ngày sinh viên muốn tránh.
@@ -38,7 +38,7 @@ def _init_domains(course_groups: CourseGroups, avoid_days: list[int]) -> Domains
     return domains
 
 
-# 3. MRV : chọn môn ưu tiên
+# MRV : chọn môn ưu tiên
 def _choose_next_course(unassigned: list[str], domains: Domains,) -> str:
     """
     MRV chọn môn có ít lựa chọn hợp lệ nhất.
@@ -123,7 +123,7 @@ def _restore_domains(removed: Removed, domains: Domains) -> None:
         domains[course_id].extend(classes)
 
 
-# 5. Backtracking chính
+# Backtracking chính
 def _backtrack(
     chosen: Schedule,
     unassigned: list[str],

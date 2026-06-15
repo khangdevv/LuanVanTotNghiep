@@ -17,6 +17,7 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
 from csp_generator import generate_schedules          # noqa: E402
+from or_tools_generator import solve_schedule as ortools_generate  # noqa: E402
 from data_loader import DEFAULT_SEMESTER_ID, load_course_groups  # noqa: E402
 from detect_conflicts import build_conflict_set       # noqa: E402
 from models import ClassSection, PersonalEvent        # noqa: E402
@@ -62,6 +63,17 @@ def conflict_set(all_classes) -> set[tuple[str, str]]:
 @pytest.fixture(scope="session")
 def valid_schedules(course_groups, conflict_set) -> list[dict]:
     return generate_schedules(
+        course_groups=course_groups,
+        conflict_set=conflict_set,
+        avoid_days=AVOID_DAYS,
+        personal_events=PERSONAL_EVENTS,
+        max_solutions=200,
+    )
+
+
+@pytest.fixture(scope="session")
+def valid_schedules_ortools(course_groups, conflict_set) -> list[dict]:
+    return ortools_generate(
         course_groups=course_groups,
         conflict_set=conflict_set,
         avoid_days=AVOID_DAYS,
