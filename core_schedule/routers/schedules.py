@@ -85,13 +85,12 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
             score_pref=scores["score_pref"],
             score_balance=scores["score_balance"],
         )
-        for i, (scores, classes) in enumerate(scored)
+        for i, (scores, classes) in enumerate(scored[:5])
     ]
 
     return GenerateScheduleResponse(
         student_id=req.student_id,
         semester_id=req.semester_id,
-        solver_used=req.solver,
         total_found=len(results),
         schedules=results,
     )
