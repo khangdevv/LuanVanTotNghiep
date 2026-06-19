@@ -29,16 +29,8 @@ def solve_schedule(
         return []
 
     try:
-        # lọc avoid days
-        init = _init_domains(course_groups, avoid_days)
-
-        # lọc personal events
-        domains: Domains = {}
-        for course_id, sections in init.items():
-            domains[course_id] = []
-            for cls in sections:
-                if not _conflicts_with_personal_events(cls, personal_events):
-                    domains[course_id].append(cls)
+        # lọc avoid days và personal events
+        domains = _init_domains(course_groups, avoid_days, personal_events)
 
         if any(len(domains[c]) == 0 for c in domains):
             return []

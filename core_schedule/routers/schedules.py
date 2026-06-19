@@ -5,17 +5,42 @@ import logging
 from fastapi import APIRouter, HTTPException, status
 
 from csp_generator import generate_schedules
-from detect_conflicts import build_conflict_set
+from detect_conflicts import build_conflict_set, detect_conflicts
 from models.classes import ClassSection
 from schemas.schedule_schema import (
     GenerateScheduleRequest,
     GenerateScheduleResponse,
     ScheduleResult,
+    DetectConflictRequest,
+    DetectConflictResponse,
 )
 from scoring_function import calculate_total_score
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/schedules", tags=["schedules"])
+
+
+@router.post(
+    "/conflicts",
+    response_model=DetectConflictResponse,
+    summary="Kiểm tra xung đột",
+    description=(
+        "Nhận danh sách nhóm lớp, sở thích và sự kiện cá nhân của sinh viên. "
+        "Trả về danh sách thời khóa biểu hợp lệ đã được chấm điểm và xếp hạng."
+    ),
+)
+async def check_conflicts(req: DetectConflictRequest) -> DetectConflictResponse:
+    conflicts_list: list[tuple[ClassSection, ClassSection]] = []
+
+    conflicts_list = detect_conflicts(req.classes)
+
+    return DetectConflictResponse(
+        student_id=req.student_id,
+        semester_id=req.semester_id,
+        conflicts=conflicts_list,
+        total_conflicts=len(conflicts_list),
+        is_valid=len(conflicts_list) == 0,
+    )
 
 
 @router.post(

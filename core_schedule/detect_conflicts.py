@@ -15,6 +15,8 @@ def detect_conflicts(classes: list[ClassSection],) -> list[tuple[ClassSection, C
 
     for i in range(len(classes) - 1):
         for j in range(i + 1, len(classes)):
+            if classes[i].course_id == classes[j].course_id:
+                continue
             if _overlaps(classes[i], classes[j]):
                 conflicts.append((classes[i], classes[j]))
 

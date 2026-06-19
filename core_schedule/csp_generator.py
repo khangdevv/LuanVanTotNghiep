@@ -24,17 +24,29 @@ def _conflicts_with_personal_events(cls: ClassSection, personal_events: list[Per
 
 
 # khởi tạo domain (lọc avoid_days)
-def _init_domains(course_groups: CourseGroups, avoid_days: list[int]) -> Domains:
+def _init_domains(course_groups: CourseGroups, avoid_days: list[int], personal_events: list[PersonalEvent]) -> Domains:
     """
-    Với mỗi môn, loại bỏ ngay các nhóm lớp nằm vào ngày sinh viên muốn tránh.
-    Domain còn lại là các lựa chọn hợp lệ trước khi sử dụng backtracking.
+    Với mỗi môn, loại bỏ các nhóm lớp nằm vào ngày sinh viên muốn tránh và lịch bận cá nhân
+    Nếu không còn lựa chọn nào thì sẽ ưu tiên nhóm lớp không bị xung đột với lịch bận
+    Domain còn lại là các lựa chọn hợp lệ.
     """
     domains: Domains = {}
     for course_id, sections in course_groups.items():
-        domains[course_id] = []
+        strict_valid = []
         for cls in sections:
-            if cls.day_of_week not in avoid_days:
-                domains[course_id].append(cls)
+            if not _conflicts_with_personal_events(cls, personal_events):
+                if cls.day_of_week not in avoid_days:
+                    strict_valid.append(cls)
+
+        if len(strict_valid) > 0:
+            domains[course_id] = strict_valid
+        else:
+            valid = []
+            for cls in sections:
+                if not _conflicts_with_personal_events(cls, personal_events):
+                    valid.append(cls)
+            domains[course_id] = valid
+
     return domains
 
 
@@ -150,10 +162,6 @@ def _backtrack(
 
     for cls in lcv_classes:
 
-        # Bước 4a lọc PersonalEvents
-        if _conflicts_with_personal_events(cls, personal_events):
-            continue
-
         # Bước 4b kiểm tra conflict_set với các môn đã gán
         if any((cls.class_id, chosen[c].class_id) in conflict_set for c in chosen):
             continue
@@ -189,7 +197,7 @@ def generate_schedules(
     if not course_groups:
         return []
 
-    domains = _init_domains(course_groups, avoid_days)
+    domains = _init_domains(course_groups, avoid_days, personal_events)
 
     if any(len(domains[c]) == 0 for c in domains):
         return []

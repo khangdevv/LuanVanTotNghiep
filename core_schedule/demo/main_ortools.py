@@ -48,7 +48,7 @@ PREFERENCE = Preference(
     w_balance         = 0.3,
 )
 
-MAX_SOLUTIONS = 200  
+MAX_SOLUTIONS = 200000  
 PRINT_TOP     = 3     
 
 JSON_PATH = DEFAULT_JSON_PATH
