@@ -110,7 +110,7 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
             score_pref=scores["score_pref"],
             score_balance=scores["score_balance"],
         )
-        for i, (scores, classes) in enumerate(scored[:5])
+        for i, (scores, classes) in enumerate(scored[:3])
     ]
 
     return GenerateScheduleResponse(

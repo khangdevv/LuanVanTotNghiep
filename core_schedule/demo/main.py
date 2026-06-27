@@ -41,12 +41,12 @@ ROOT = Path(__file__).parent.parent   # trỏ về core/
 
 # chỉnh sửa theo nhu cầu
 COURSE_IDS: list[str] = [
-    "CS03042", "CS03002", "CS09002", "GS49005",
-    "GS19008", "CS03058", "CS03043", "CS03057",
+    "CS03001", "CS03002", "CS03042", "CS03043",
+    "CS03044", "CS03057"
 ]
 
 # Ngày muốn tránh (2=Thứ 2 … 8=CN)
-AVOID_DAYS: list[int] = [6, 7, 8]
+AVOID_DAYS: list[int] = [7, 8]
 
 # Lịch bận cá nhân
 PERSONAL_EVENTS: list[PersonalEvent] = [
@@ -54,9 +54,18 @@ PERSONAL_EVENTS: list[PersonalEvent] = [
         event_id    = 1,
         student_id  = "demo_student",
         title       = "Làm thêm quán cà phê",
-        day_of_week = 5,
-        start_time  = time(12, 35),
-        end_time    = time(18, 00),
+        day_of_week = 2,
+        start_time  = time(14, 00),
+        end_time    = time(19, 00),
+        is_recurring= True,
+    ),
+    PersonalEvent(
+        event_id    = 2,
+        student_id  = "demo_student",
+        title       = "Học tiếng Anh",
+        day_of_week = 2,
+        start_time  = time(9, 5),
+        end_time    = time(12, 25),
         is_recurring= True,
     ),
 ]
@@ -64,14 +73,14 @@ PERSONAL_EVENTS: list[PersonalEvent] = [
 PREFERENCE =  Preference(
         student_id = "demo_student",
         preferred_slot = PreferredSlot.MORNING,
-        min_break_minutes = 15,
+        min_break_minutes = 25,
         w_break = 0.4,
         w_preference = 0.3,
         w_balance = 0.3
     )
 
-MAX_SOLUTIONS = 200000   # giới hạn số TKB sinh ra
-PRINT_MAX     = 200000   # số TKB in ra
+MAX_SOLUTIONS = 200   # giới hạn số TKB sinh ra
+PRINT_MAX     = 200   # số TKB in ra
 
 # Loader
 JSON_PATH = DEFAULT_JSON_PATH
