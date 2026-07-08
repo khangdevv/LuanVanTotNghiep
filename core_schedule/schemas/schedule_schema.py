@@ -22,14 +22,15 @@ class DetectConflictRequest(BaseModel):
     classes: list[ClassSection] = Field(min_length=1)
 
 class DetectConflictResponse(BaseModel):
-    student_id: str
     semester_id: str
     conflicts: list[tuple[ClassSection, ClassSection]] = Field(default_factory=list)
     total_conflicts: int = Field(ge=0)
     is_valid: bool
 
 class ScheduleResult(BaseModel):
-    rank: int = Field(ge=1, description="Thứ hạng")
+    rank: int = Field(ge=1)
+    is_recommended: bool = Field(default=False)
+    algorithm: str = Field(default="CSP")
     classes: list[ClassSection]
     score_total: float = Field(ge=0, le=1)
     score_break: float = Field(ge=0, le=1)
@@ -37,7 +38,6 @@ class ScheduleResult(BaseModel):
     score_balance: float = Field(ge=0, le=1)
 
 class GenerateScheduleResponse(BaseModel):
-    student_id: str
     semester_id: str
     total_found: int = Field(ge=0)
     schedules: list[ScheduleResult]
