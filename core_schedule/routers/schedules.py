@@ -141,7 +141,7 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
         ScheduleResult(
             rank=i + 1,
             is_recommended=(i == 0),
-            algorithm=algo,
+            algorithm_tag=algo,
             classes=classes,
             score_total=scores["score_total"],
             score_break=scores["score_break"],
