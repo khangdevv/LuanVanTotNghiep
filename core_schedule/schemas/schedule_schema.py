@@ -14,7 +14,7 @@ class GenerateScheduleRequest(BaseModel):
     preferences: Preference
     personal_events: list[PersonalEvent] = Field(default_factory=list)
     avoid_days: list[int] = Field(default_factory=list)
-    max_solutions: int = Field(default=50, ge=1, le=500)
+    max_solutions: int = Field(default=500, ge=1, le=5000)
 
 class DetectConflictRequest(BaseModel):
     student_id: str = Field(min_length=1, max_length=20)
@@ -30,7 +30,7 @@ class DetectConflictResponse(BaseModel):
 class ScheduleResult(BaseModel):
     rank: int = Field(ge=1)
     is_recommended: bool = Field(default=False)
-    algorithm: str = Field(default="CSP")
+    algorithm_tag: str = Field(default="CSP")
     classes: list[ClassSection]
     score_total: float = Field(ge=0, le=1)
     score_break: float = Field(ge=0, le=1)
@@ -38,6 +38,7 @@ class ScheduleResult(BaseModel):
     score_balance: float = Field(ge=0, le=1)
 
 class GenerateScheduleResponse(BaseModel):
+    student_id: str
     semester_id: str
     total_found: int = Field(ge=0)
     schedules: list[ScheduleResult]

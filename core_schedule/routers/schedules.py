@@ -152,6 +152,7 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
     ]
 
     return GenerateScheduleResponse(
+        student_id=req.student_id,
         semester_id=req.semester_id,
         total_found=len(results),
         schedules=results,
