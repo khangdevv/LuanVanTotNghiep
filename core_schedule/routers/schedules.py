@@ -112,11 +112,12 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
 
     # Chấm điểm và lấy Top 3
     scored_csp = score_schedules(raw_csp)[:3]
-    scored_ortools = score_schedules(raw_ortools)[:3]
+    scored_ortools = score_schedules(raw_ortools)
 
     # Gộp và lọc trùng lặp
     final_candidates = []
     seen_hashes = set()
+    count_ortools = 0
 
     # Hàm hash cho 1 TKB
     def get_hash(classes: list[ClassSection]) -> str:
@@ -133,6 +134,9 @@ async def generate_schedule(req: GenerateScheduleRequest) -> GenerateScheduleRes
         if h not in seen_hashes:
             seen_hashes.add(h)
             final_candidates.append((scores, classes, "OR-Tools"))
+            count_ortools += 1
+        if count_ortools == 3:
+            break
 
     # Sắp xếp lại
     final_candidates.sort(key=lambda x: x[0]["score_total"], reverse=True)
