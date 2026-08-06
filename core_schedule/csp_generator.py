@@ -32,8 +32,12 @@ def _init_domains(course_groups: CourseGroups, avoid_days: list[int], personal_e
     """
     domains: Domains = {}
     for course_id, sections in course_groups.items():
+        available_sections = [
+            cls for cls in sections
+            if cls.current_enrolled < cls.max_students
+        ]
         strict_valid = []
-        for cls in sections:
+        for cls in available_sections:
             if not _conflicts_with_personal_events(cls, personal_events):
                 if cls.day_of_week not in avoid_days:
                     strict_valid.append(cls)
@@ -42,7 +46,7 @@ def _init_domains(course_groups: CourseGroups, avoid_days: list[int], personal_e
             domains[course_id] = strict_valid
         else:
             valid = []
-            for cls in sections:
+            for cls in available_sections:
                 if not _conflicts_with_personal_events(cls, personal_events):
                     valid.append(cls)
             domains[course_id] = valid

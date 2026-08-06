@@ -16,6 +16,7 @@ class ClassSection(BaseModel):
     room: Optional[str] = Field(default=None, max_length=50)
     instructor: Optional[str] = Field(default=None, max_length=100)
     max_students: int = Field(default=1, gt=0)
+    current_enrolled: int = Field(default=0, ge=0)
 
     @model_validator(mode="after")
     def validate_time_range(self) -> "ClassSection":
