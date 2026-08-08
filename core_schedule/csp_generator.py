@@ -34,7 +34,7 @@ def _init_domains(course_groups: CourseGroups, avoid_days: list[int], personal_e
     for course_id, sections in course_groups.items():
         available_sections = [
             cls for cls in sections
-            if cls.current_enrolled < cls.max_students
+            if cls.enrolled_count < cls.max_students
         ]
         strict_valid = []
         for cls in available_sections:
